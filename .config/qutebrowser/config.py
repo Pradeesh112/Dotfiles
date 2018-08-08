@@ -758,7 +758,7 @@ c.downloads.location.prompt = False
 ## Duration (in milliseconds) to wait before removing finished downloads.
 ## If set to -1, downloads are never removed.
 ## Type: Int
-# c.downloads.remove_finished = -1
+c.downloads.remove_finished =50
 
 ## Editor (and arguments) to use for the `open-editor` command. The
 ## following placeholders are defined: * `{file}`: Filename of the file
@@ -902,11 +902,11 @@ c.downloads.location.prompt = False
 
 ## Hide unmatched hints in rapid mode.
 ## Type: Bool
-# c.hints.hide_unmatched_rapid_hints = True
+c.hints.hide_unmatched_rapid_hints = True
 
 ## Minimum number of characters used for hint strings.
 ## Type: Int
-# c.hints.min_chars = 1
+c.hints.min_chars = 1
 
 ## Mode to use for hints.
 ## Type: String
@@ -998,7 +998,7 @@ c.downloads.location.prompt = False
 ## Time (in milliseconds) from pressing a key to seeing the keyhint
 ## dialog.
 ## Type: Int
-# c.keyhint.delay = 500
+c.keyhint.delay = 10
 
 ## Rounding radius (in pixels) for the edges of the keyhint dialog.
 ## Type: Int
@@ -1149,7 +1149,7 @@ c.downloads.location.prompt = False
 
 ## Hide the statusbar unless a message is shown.
 ## Type: Bool
-# c.statusbar.hide = False
+c.statusbar.hide = True
 
 ## Padding (in pixels) for the statusbar.
 ## Type: Padding
@@ -1284,7 +1284,7 @@ c.downloads.location.prompt = False
 ##   - never: Always hide the tab bar.
 ##   - multiple: Hide the tab bar if only one tab is open.
 ##   - switching: Show the tab bar when switching tabs.
-# c.tabs.show = 'always'
+c.tabs.show = 'never'
 
 ## Duration (in milliseconds) to show the tab bar before hiding it when
 ## tabs.show is set to 'switching'.
