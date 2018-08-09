@@ -666,11 +666,11 @@ c.content.host_blocking.enabled = True
 ## still be downloaded by clicking the download button in the pdf.js
 ## viewer.
 ## Type: Bool
-# c.content.pdfjs = False
+# c.content.pdfjs = True
 
 ## Enable plugins in Web pages.
 ## Type: Bool
-# c.content.plugins = False
+# c.content.plugins = True
 
 ## Draw the background color and images also when the page is printed.
 ## Type: Bool
@@ -679,7 +679,7 @@ c.content.host_blocking.enabled = True
 ## Open new windows in private browsing mode which does not record
 ## visited pages.
 ## Type: Bool
-# c.content.private_browsing = False
+# c.content.private_browsing = True
 
 ## Proxy to use. In addition to the listed values, you can use a
 ## `socks://...` or `http://...` URL.
@@ -758,7 +758,7 @@ c.downloads.location.prompt = False
 ## Duration (in milliseconds) to wait before removing finished downloads.
 ## If set to -1, downloads are never removed.
 ## Type: Int
-c.downloads.remove_finished =50
+c.downloads.remove_finished =300
 
 ## Editor (and arguments) to use for the `open-editor` command. The
 ## following placeholders are defined: * `{file}`: Filename of the file
@@ -887,7 +887,7 @@ c.downloads.remove_finished =50
 
 ## Characters used for hint strings.
 ## Type: UniqueCharString
-c.hints.chars = 'asdfghjkl'
+# c.hints.chars = 'asdfghjkl'
 
 ## Dictionary file to be used by the word hints.
 ## Type: File
@@ -906,7 +906,7 @@ c.hints.hide_unmatched_rapid_hints = True
 
 ## Minimum number of characters used for hint strings.
 ## Type: Int
-c.hints.min_chars = 1
+# c.hints.min_chars = 1
 
 ## Mode to use for hints.
 ## Type: String
@@ -914,7 +914,7 @@ c.hints.min_chars = 1
 ##   - number: Use numeric hints. (In this mode you can also type letters from the hinted element to filter and reduce the number of elements that are hinted.)
 ##   - letter: Use the characters in the `hints.chars` setting.
 ##   - word: Use hints words based on the html elements and the extra words.
-c.hints.mode = 'letter'
+# c.hints.mode = 'letter'
 
 ## Comma-separated list of regular expressions to use for 'next' links.
 ## Type: List of Regex
@@ -998,7 +998,7 @@ c.hints.mode = 'letter'
 ## Time (in milliseconds) from pressing a key to seeing the keyhint
 ## dialog.
 ## Type: Int
-c.keyhint.delay = 10
+c.keyhint.delay = 5
 
 ## Rounding radius (in pixels) for the edges of the keyhint dialog.
 ## Type: Int
@@ -1149,7 +1149,7 @@ c.keyhint.delay = 10
 
 ## Hide the statusbar unless a message is shown.
 ## Type: Bool
-c.statusbar.hide = True
+# c.statusbar.hide = True
 
 ## Padding (in pixels) for the statusbar.
 ## Type: Padding
@@ -1176,7 +1176,7 @@ c.statusbar.hide = True
 
 ## Open new tabs (middleclick/ctrl+click) in the background.
 ## Type: Bool
-# c.tabs.background = False
+# c.tabs.background = True
 
 ## Mouse button with which to close tabs.
 ## Type: String
@@ -1284,7 +1284,7 @@ c.statusbar.hide = True
 ##   - never: Always hide the tab bar.
 ##   - multiple: Hide the tab bar if only one tab is open.
 ##   - switching: Show the tab bar when switching tabs.
-c.tabs.show = 'never'
+c.tabs.show = 'multiple'
 
 ## Duration (in milliseconds) to show the tab bar before hiding it when
 ## tabs.show is set to 'switching'.
