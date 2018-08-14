@@ -758,7 +758,7 @@ c.downloads.location.prompt = False
 ## Duration (in milliseconds) to wait before removing finished downloads.
 ## If set to -1, downloads are never removed.
 ## Type: Int
-c.downloads.remove_finished =300
+c.downloads.remove_finished =10000
 
 ## Editor (and arguments) to use for the `open-editor` command. The
 ## following placeholders are defined: * `{file}`: Filename of the file
