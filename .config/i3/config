@@ -123,6 +123,7 @@ for_window [class="qt5ct"] floating enable border pixel 3
 for_window [class="qutebrowser"] border pixel 3
 for_window [class="Sxiv"] floating enable border pixel 3
 for_window [class="Popcorn-Time"] border pixel 3
+for_window [class="Evince"] border pixel 3
 
 # Make the currently focused window a scratchpad
 bindsym $mod+Shift+minus move scratchpad
