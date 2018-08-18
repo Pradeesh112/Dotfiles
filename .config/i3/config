@@ -38,9 +38,9 @@ bindsym $mod+d exec rofi -show drun -theme arthur
 ###########################################################################
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
+bindsym $mod+semicolon exec pactl set-sink-volume 0 +5% 
+bindsym $mod+apostrophe exec pactl set-sink-volume 0 -5% 
+bindsym $mod+Shift+apostrophe exec pactl set-sink-mute 0 toggle 
 bindsym $mod+p exec pavucontrol
 
 ############################################################################
@@ -50,14 +50,13 @@ bindsym $mod+p exec pavucontrol
 ############################################################################
 
 # Sreen brightness controls
-#bindsym XF86BrightnessUp exec xbacklight -inc 5 # increase screen brightness
-#bindsym XF86BrightnessDown exec xbacklight -dec 5 # decrease screen brightness
+bindsym $mod+comma exec light -A 5 
+bindsym $mod+Shift+comma exec light -U 5 
 
 #############################################################################
 
 # Autostart applications
 exec --no-startup-id nitrogen --restore; sleep 1;
-exec --no-startup-id xfce4-power-manager
 exec --no-startup-id redshift
 exec_always compton -b -f
 #exec --no-startup-id wal -R
@@ -155,7 +154,7 @@ bindsym $mod+n border normal
 bindsym $mod+j focus left
 bindsym $mod+k focus right
 #bindsym $mod+l focus up
-bindsym $mod+semicolon focus down
+#bindsym $mod+semicolon focus down
 
 # alternatively, you can use the cursor keys
 bindsym $mod+Left focus left
