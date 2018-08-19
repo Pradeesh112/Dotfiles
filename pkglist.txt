@@ -1,4 +1,5 @@
 adapta-gtk-theme
+atool
 autoconf
 automake
 bash
@@ -48,6 +49,7 @@ less
 libmtp
 libtool
 licenses
+light-git
 linux
 linux-headers
 logrotate
@@ -67,6 +69,7 @@ network-manager-applet
 networkmanager
 nitrogen
 noto-fonts
+openssh
 pacman
 papirus-icon-theme
 patch
@@ -74,14 +77,15 @@ pavucontrol
 pciutils
 perl
 pkgconf
+popcorntime-bin
 powertop
 procps-ng
 psmisc
 pulseaudio
 pulseaudio-alsa
 qt5ct
-qutebrowser-git
-ranger
+qutebrowser
+ranger-git
 redshift
 reiserfsprogs
 rofi
@@ -117,10 +121,10 @@ wpa_actiond
 wpa_supplicant
 xf86-input-libinput
 xf86-video-amdgpu
-xfce4-power-manager
 xfsprogs
 xorg-server
 xorg-xinit
+xorg-xkill
 yay
 you-get
 youtube-dl
