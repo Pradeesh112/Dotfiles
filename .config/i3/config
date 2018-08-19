@@ -77,7 +77,7 @@ bindsym $mod+Shift+n exec nitrogen
 bindsym $mod+Ctrl+n exec urxvt -e 'nmtui'
 bindsym $mod+Shift+a exec lxappearance
 bindsym $mod+Ctrl+a exec qt5ct
-bindsym Print exec --no-startup-id scrot '%Y-%d-%m_$wx$h.png' -e 'mv $f ~/Pictures/Screenshots/'
+bindsym Print exec --no-startup-id scrot '%Y-%m-%d-%s.jpg' -e 'mv $f ~/Pictures/Screenshots'
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
