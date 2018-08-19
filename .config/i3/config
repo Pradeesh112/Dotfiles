@@ -1,7 +1,5 @@
 
 # i3 config file (v4)
-# Please see https://i3wm.org/docs/userguide.html for a complete reference!
-
 set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -103,7 +101,6 @@ assign [class="Transmission-gtk"] $ws8
 for_window [class="^Transmission-gtk$"] focus
 assign [class="Popcorn-Time"] $ws9
 for_window [class="^Popcorn-Time$"] focus
-#assign [class="VirtualBox Manager"] $ws8
  
 # Open specific applications in floating mode
 for_window [title="File Transfer*"] floating enable
