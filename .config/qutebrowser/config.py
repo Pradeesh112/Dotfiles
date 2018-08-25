@@ -1413,6 +1413,13 @@ c.url.start_pages = ['http://portal.actcorp.in/web/chn/home']
 ## Type: Bool
 # c.zoom.text_only = False
 
+## watch videos via mpv
+config.bind('<Ctrl-Shift-a>', 'hint links spawn --detach mpv --force-window yes {hint-url}')
+
+## extracting videos via youtube-dl and you-get
+config.bind('<Shift-v>', 'hint links spawn urxvt -e youtube-dl {hint-url}')
+config.bind('<shift-y>', 'hint links spawn urxvt -e you-get {hint-url}')
+
 ## Bindings for normal mode
 config.bind("'", 'enter-mode jump_mark')
 config.bind('+', 'zoom-in')
