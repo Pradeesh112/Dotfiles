@@ -57,6 +57,7 @@ bindsym $mod+Shift+comma exec light -U 5
 exec --no-startup-id nitrogen --restore; sleep 1;
 exec --no-startup-id redshift
 exec_always compton -b -f
+exec --no-startup-id syndaemon -i 1.5 -k -R -t
 #exec --no-startup-id wal -R
 
 # Start Applications
