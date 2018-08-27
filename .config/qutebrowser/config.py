@@ -1416,8 +1416,9 @@ c.url.start_pages = ['http://portal.actcorp.in/web/chn/home']
 ## watch videos via mpv
 config.bind('<Ctrl-Shift-a>', 'hint links spawn --detach mpv --force-window yes {hint-url}')
 
-## extracting videos via youtube-dl and you-get
+## extracting videos and audio via youtube-dl and you-get
 config.bind('<Shift-v>', 'hint links spawn urxvt -e youtube-dl {hint-url}')
+config.bind('<Shift-a>', 'hint links spawn urxvt -e youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 {hint-url}')
 config.bind('<shift-y>', 'hint links spawn urxvt -e you-get {hint-url}')
 
 ## Bindings for normal mode
