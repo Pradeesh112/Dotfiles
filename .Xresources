@@ -1,14 +1,13 @@
 URxvt.font:xft:monospace:size=11
 URxvt.scrollBar: false
 URxvt.letterSpace:-2
-URxvt.transparent: true
-URxvt.shading:20
+URxvt.transparent: false
+URxvt.shading: 30
 URxvt.cursorUnderline: true
 URxvt.cursorBlink: true
 
-
 *.foreground:   #00FFFF
-*.background:   #181512
+*.background:   #000000
 *.cursorColor:  #00FFFF
 
 ! black
@@ -42,5 +41,3 @@ URxvt.cursorBlink: true
 ! white
 *.color7:       #d3cab3
 *.color15:      #f4f3e2
-
-
