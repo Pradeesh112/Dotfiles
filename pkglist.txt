@@ -1,5 +1,4 @@
 adapta-gtk-theme
-atool
 autoconf
 automake
 bash
@@ -15,6 +14,7 @@ device-mapper
 dhcpcd
 dialog
 diffutils
+dtrx
 e2fsprogs
 evince
 fakeroot
@@ -108,6 +108,7 @@ tlp
 transmission-gtk
 tumbler
 ufw
+unrar
 unzip
 usbutils
 util-linux
@@ -120,6 +121,7 @@ wireless_tools
 wpa_actiond
 wpa_supplicant
 xf86-input-libinput
+xf86-input-synaptics
 xf86-video-amdgpu
 xfsprogs
 xorg-server
