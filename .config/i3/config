@@ -144,15 +144,15 @@ bindsym $mod+m bar mode toggle
 bindsym $mod+l exec /usr/bin/i3lock-fancy
 
 # change borders
-bindsym $mod+u border none
-bindsym $mod+y border pixel 4
-bindsym $mod+n border normal
+#bindsym $mod+u border none
+#bindsym $mod+y border pixel 4
+#bindsym $mod+n border normal
 
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus right
-#bindsym $mod+l focus up
-#bindsym $mod+semicolon focus down
+bindsym $mod+u focus up
+bindsym $mod+y focus down
 
 # alternatively, you can use the cursor keys
 bindsym $mod+Left focus left
