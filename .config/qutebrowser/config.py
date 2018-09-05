@@ -1046,7 +1046,6 @@ c.keyhint.delay = 5
 ## list) will work.
 ## Type: List of String
 # c.qt.args = []
-'["ppapi-widevine-path=/usr/lib/qt/plugins/ppapi/libwidevinecdmadapter.so"]'
 
 ## Force a Qt platform to use. This sets the `QT_QPA_PLATFORM`
 ## environment variable and is useful to force using the XCB plugin when
