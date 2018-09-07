@@ -3,8 +3,6 @@
 
 config_version: 2
 settings:
-  aliases:
+  qt.args:
     global:
-      q: quit
-      w: session-save
-      wq: quit --save
+    - ppapi-widevine-path=/usr/lib/qt/plugins/ppapi/libwidevinecdmadapter.so
