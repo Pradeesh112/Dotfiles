@@ -54,9 +54,9 @@ bindsym $mod+Shift+comma exec light -U 5
 # Autostart applications
 exec --no-startup-id nitrogen --restore; sleep 1;
 exec --no-startup-id redshift
-exec_always compton -b -f
+exec_always compton 
 exec --no-startup-id syndaemon -i 1.5 -k -R -t
-#exec --no-startup-id wal -R
+exec --no-startup-id qutebrowser
 
 # Start Applications
 bindsym $mod+F1 exec qutebrowser
@@ -70,6 +70,7 @@ bindsym $mod+F8 exec transmission-gtk
 bindsym $mod+F9 exec popcorntime
 bindsym $mod+c exec urxvt -e 'bc'
 bindsym $mod+s exec spotify
+bindsym $mod+t exec urxvt -e 'tmux'
 bindsym $mod+Shift+n exec nitrogen
 bindsym $mod+Ctrl+n exec urxvt -e 'nmtui'
 bindsym $mod+Shift+a exec lxappearance
@@ -139,7 +140,8 @@ bindsym $mod+Shift+e exec i3-msg exit
 bindsym $mod+m bar mode toggle
  
 # Lock screen
-bindsym $mod+l exec /usr/bin/i3lock-fancy
+#bindsym $mod+l exec /usr/bin/i3lock-fancy
+bindsym $mod+l exec betterlockscreen -l 
 
 # change borders
 #bindsym $mod+u border none
@@ -248,6 +250,10 @@ bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
 gaps inner 05
 gaps outer 05
 
+# Enable and Disable gaps on the fly
+bindsym $mod+Shift+d gaps inner all set 0; gaps outer all set 0
+bindsym $mod+Shift+s gaps inner all set 05; gaps outer all set 05
+
 # Additionally, you can issue commands with the following syntax. This is usefull to bind keys to changing the gap size.
 # gaps inner|outer current|all set|plus|minus <px>
 #gaps inner all set 10
@@ -332,7 +338,7 @@ bindsym $mod+r mode "resize"
 
 set $mode_system System (l)ock, (e)xit, (Shift+s)uspend, (h)ibernate, (r)eboot, (s)hutdown
 mode "$mode_system" {
-bindsym l exec --no-startup-id /usr/bin/i3lock-fancy, mode "default"
+bindsym l exec --no-startup-id /usr/bin/betterlockscreen -l, mode "default"
 bindsym e exec --no-startup-id i3-msg exit, mode "default"
 bindsym Shift+s exec --no-startup-id i3exit suspend, mode "default"
 bindsym h exec --no-startup-id i3exit hibernate, mode "default"
