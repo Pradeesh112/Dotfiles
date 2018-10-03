@@ -1644,7 +1644,7 @@ config.bind('<Return>', 'follow-hint', mode='hint')
 
 ## Bindings for insert mode
 config.bind('<Ctrl-E>', 'open-editor', mode='insert')
-config.bind('aa', 'leave-mode', mode='insert')
+config.bind('zz', 'leave-mode', mode='insert')
 config.bind('<Shift-Ins>', 'insert-text {primary}', mode='insert')
 
 ## Bindings for passthrough mode
