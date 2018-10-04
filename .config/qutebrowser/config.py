@@ -666,7 +666,7 @@ c.content.host_blocking.enabled = True
 ## still be downloaded by clicking the download button in the pdf.js
 ## viewer.
 ## Type: Bool
-# c.content.pdfjs = True
+c.content.pdfjs = True
 
 ## Enable plugins in Web pages.
 ## Type: Bool
@@ -1667,7 +1667,7 @@ config.bind('<Ctrl-W>', 'rl-unix-word-rubout', mode='prompt')
 config.bind('<Ctrl-X>', 'prompt-open-download', mode='prompt')
 config.bind('<Ctrl-Y>', 'rl-yank', mode='prompt')
 config.bind('<Down>', 'prompt-item-focus next', mode='prompt')
-config.bind('<Escape>', 'leave-mode', mode='prompt')
+config.bind('zz', 'leave-mode', mode='prompt')
 config.bind('<Return>', 'prompt-accept', mode='prompt')
 config.bind('<Shift-Tab>', 'prompt-item-focus prev', mode='prompt')
 config.bind('<Tab>', 'prompt-item-focus next', mode='prompt')
