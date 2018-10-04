@@ -670,7 +670,7 @@ c.content.pdfjs = True
 
 ## Enable plugins in Web pages.
 ## Type: Bool
-# c.content.plugins = True
+c.content.plugins = True
 
 ## Draw the background color and images also when the page is printed.
 ## Type: Bool
@@ -1045,7 +1045,7 @@ c.keyhint.delay = 5
 ## https://peter.sh/experiments/chromium-command-line-switches/ for a
 ## list) will work.
 ## Type: List of String
-# c.qt.args = [] 
+c.qt.args = ['["ppapi-widevine-path=/usr/lib/qt/plugins/ppapi/libwidevinecdmadapter.so"]']
 
 ## Force a Qt platform to use. This sets the `QT_QPA_PLATFORM`
 ## environment variable and is useful to force using the XCB plugin when
