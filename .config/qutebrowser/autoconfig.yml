@@ -3,6 +3,5 @@
 
 config_version: 2
 settings:
-  qt.args:
-    global:
-    - ppapi-widevine-path=/usr/lib/qt/plugins/ppapi/libwidevinecdmadapter.so
+  content.proxy:
+    global: socks://localhost:9050/

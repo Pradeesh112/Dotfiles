@@ -54,9 +54,10 @@ bindsym $mod+Shift+comma exec light -U 5
 # Autostart applications
 exec --no-startup-id nitrogen --restore; sleep 1;
 exec --no-startup-id redshift
-exec_always compton 
+exec_always compton  
 exec --no-startup-id syndaemon -i 1.5 -k -R -t
 exec --no-startup-id qutebrowser
+exec --no-startup-id xautolock -time 10 -locker "betterlockscreen -l"
 
 # Start Applications
 bindsym $mod+F1 exec qutebrowser
@@ -69,7 +70,7 @@ bindsym $mod+F7 exec bleachbit
 bindsym $mod+F8 exec transmission-gtk
 bindsym $mod+F9 exec popcorntime
 bindsym $mod+c exec urxvt -e 'bc'
-bindsym $mod+s exec spotify
+#bindsym $mod+s exec spotify
 bindsym $mod+t exec urxvt -e 'tmux'
 bindsym $mod+Shift+n exec nitrogen
 bindsym $mod+Ctrl+n exec urxvt -e 'nmtui'
