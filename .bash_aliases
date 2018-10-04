@@ -44,3 +44,6 @@ alias vs='cd Videos'
 alias co='cd ~/.config'
 alias ff='ffmpeg -ss 00:00:00 -t 00:00:00 -i input.mp3 -acodec copy output.mp3'
 alias hf='ls -d .?*'
+alias ta='tmux a'
+alias tl='tmux ls'
+
