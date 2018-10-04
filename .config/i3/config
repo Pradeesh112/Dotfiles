@@ -70,7 +70,7 @@ bindsym $mod+F7 exec bleachbit
 bindsym $mod+F8 exec transmission-gtk
 bindsym $mod+F9 exec popcorntime
 bindsym $mod+c exec urxvt -e 'bc'
-#bindsym $mod+s exec spotify
+bindsym $mod+s exec spotify
 bindsym $mod+t exec urxvt -e 'tmux'
 bindsym $mod+Shift+n exec nitrogen
 bindsym $mod+Ctrl+n exec urxvt -e 'nmtui'
