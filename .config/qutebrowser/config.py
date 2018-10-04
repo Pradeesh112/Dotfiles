@@ -1582,7 +1582,7 @@ config.bind('}}', 'navigate next -t')
 config.bind('$', 'move-to-end-of-line', mode='caret')
 config.bind('0', 'move-to-start-of-line', mode='caret')
 config.bind('<Ctrl-Space>', 'drop-selection', mode='caret')
-config.bind('<Escape>', 'leave-mode', mode='caret')
+config.bind('zz', 'leave-mode', mode='caret')
 config.bind('<Return>', 'yank selection', mode='caret')
 config.bind('<Space>', 'toggle-selection', mode='caret')
 config.bind('G', 'move-to-end-of-document', mode='caret')
@@ -1628,7 +1628,7 @@ config.bind('<Ctrl-U>', 'rl-unix-line-discard', mode='command')
 config.bind('<Ctrl-W>', 'rl-unix-word-rubout', mode='command')
 config.bind('<Ctrl-Y>', 'rl-yank', mode='command')
 config.bind('<Down>', 'command-history-next', mode='command')
-config.bind('<Escape>', 'leave-mode', mode='command')
+config.bind('zz', 'leave-mode', mode='command')
 config.bind('<Return>', 'command-accept', mode='command')
 config.bind('<Shift-Delete>', 'completion-item-del', mode='command')
 config.bind('<Shift-Tab>', 'completion-item-focus prev', mode='command')
@@ -1639,7 +1639,7 @@ config.bind('<Up>', 'command-history-prev', mode='command')
 config.bind('<Ctrl-B>', 'hint all tab-bg', mode='hint')
 config.bind('<Ctrl-F>', 'hint links', mode='hint')
 config.bind('<Ctrl-R>', 'hint --rapid links tab-bg', mode='hint')
-config.bind('<Escape>', 'leave-mode', mode='hint')
+config.bind('zz', 'leave-mode', mode='hint')
 config.bind('<Return>', 'follow-hint', mode='hint')
 
 ## Bindings for insert mode
@@ -1648,7 +1648,7 @@ config.bind('zz', 'leave-mode', mode='insert')
 config.bind('<Shift-Ins>', 'insert-text {primary}', mode='insert')
 
 ## Bindings for passthrough mode
-config.bind('<Ctrl-V>', 'leave-mode', mode='passthrough')
+config.bind('zz', 'leave-mode', mode='passthrough')
 
 ## Bindings for prompt mode
 config.bind('<Alt-B>', 'rl-backward-word', mode='prompt')
@@ -1676,12 +1676,12 @@ config.bind('n', 'prompt-accept no', mode='prompt')
 config.bind('y', 'prompt-accept yes', mode='prompt')
 
 ## Bindings for register mode
-config.bind('<Escape>', 'leave-mode', mode='register')
+config.bind('zz', 'leave-mode', mode='register')
 
 ## Bindings for yesno mode
 # config.bind('<Alt-Shift-Y>', 'prompt-yank --sel', mode='yesno')
 # config.bind('<Alt-Y>', 'prompt-yank', mode='yesno')
-# config.bind('<Escape>', 'leave-mode', mode='yesno')
+# config.bind('zz', 'leave-mode', mode='yesno')
 # config.bind('<Return>', 'prompt-accept', mode='yesno')
 # config.bind('n', 'prompt-accept no', mode='yesno')
 # config.bind('y', 'prompt-accept yes', mode='yesno')
