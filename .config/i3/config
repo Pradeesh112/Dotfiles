@@ -123,10 +123,10 @@ for_window [class="Popcorn-Time"] border pixel 3
 for_window [class="Evince"] border pixel 3
 
 # Make the currently focused window a scratchpad
-bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+period move scratchpad
 
 # Show the first scratchpad window
-bindsym $mod+minus scratchpad show
+bindsym $mod+slash scratchpad show
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
