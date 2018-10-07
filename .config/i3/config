@@ -57,12 +57,12 @@ exec --no-startup-id redshift
 exec --no-startup-id compton  
 exec --no-startup-id syndaemon -i 1.5 -k -R -t
 exec --no-startup-id qutebrowser
-exec --no-startup-id urxvt -e 'tmux'
+#exec --no-startup-id urxvt -e 'tmux'
 exec --no-startup-id xautolock -time 10 -locker "betterlockscreen -l"
 
 # Start Applications
-bindsym $mod+F2 exec qutebrowser
-bindsym $mod+F1 exec urxvt -e 'ranger'
+bindsym $mod+F1 exec qutebrowser
+bindsym $mod+F2 exec urxvt -e 'ranger'
 bindsym $mod+F3 exec urxvt -e 'cmus'
 bindsym $mod+F4 exec urxvt -e 'rtv'
 bindsym $mod+F5 exec thunar
@@ -70,7 +70,7 @@ bindsym $mod+F6 exec evince
 bindsym $mod+F7 exec bleachbit
 bindsym $mod+F8 exec transmission-gtk
 bindsym $mod+F9 exec popcorntime
-bindsym $mod+c exec urxvt -e 'bc'
+#bindsym $mod+c exec urxvt -e 'bc'
 bindsym $mod+s exec spotify
 bindsym $mod+t exec urxvt -e 'tmux'
 bindsym $mod+Shift+n exec nitrogen
@@ -83,9 +83,9 @@ bindsym Print exec --no-startup-id scrot '%Y-%m-%d-%s.jpg' -e 'mv $f ~/Pictures/
 for_window [urgent=latest] focus
 
 # Open applications on specific workspaces
-assign [class="qutebrowser"] $ws2
+assign [class="qutebrowser"] $ws1
 for_window [class="^qutebrowser$"] focus
-assign [class="URxvt"] $ws1
+assign [class="URxvt"] $ws2
 for_window [class="^URxvt$"] focus
 for_window [class="Spotify"] move to workspace $ws3
 for_window [class="^Spotify$"] focus
@@ -123,11 +123,15 @@ for_window [class="Sxiv"] floating enable border pixel 3
 for_window [class="Popcorn-Time"] border pixel 3
 for_window [class="Evince"] border pixel 3
 
+# cmus palying music via scratchpad
+for_window [instance="scratchpad"] move scratchpad, scratchpad show, resize set 800 550, border pixel 3, move position center
+bindsym $mod+c exec --no-startup-id urxvt -name scratchpad -e cmus
+
 # Make the currently focused window a scratchpad
 bindsym $mod+period move scratchpad
 
 # Show the first scratchpad window
-bindsym $mod+slash scratchpad show
+bindsym $mod+slash scratchpad show, move position center
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -201,26 +205,26 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # Workspace names
-set $ws1 
-set $ws2   
-set $ws3 
-set $ws4  
-set $ws5 
-set $ws6 
-set $ws7 
-set $ws8 
-set $ws9 
+set $ws1 ""
+set $ws2 ""
+set $ws3 ""
+set $ws4 "" 
+set $ws5 ""
+set $ws6 ""
+set $ws7 ""
+set $ws8 ""
+set $ws9 ""
 
 # switch to workspace
-bindsym $mod+1 workspace $ws1
-bindsym $mod+2 workspace $ws2
-bindsym $mod+3 workspace $ws3
-bindsym $mod+4 workspace $ws4
-bindsym $mod+5 workspace $ws5
-bindsym $mod+6 workspace $ws6
-bindsym $mod+7 workspace $ws7
-bindsym $mod+8 workspace $ws8
-bindsym $mod+9 workspace $ws9
+bindsym $mod+1    workspace $ws1
+bindsym $mod+2    workspace $ws2 
+bindsym $mod+3    workspace $ws3
+bindsym $mod+4    workspace $ws4
+bindsym $mod+5    workspace $ws5
+bindsym $mod+6    workspace $ws6
+bindsym $mod+7    workspace $ws7
+bindsym $mod+8    workspace $ws8
+bindsym $mod+9    workspace $ws9
 
 # Move focused container to workspace
 bindsym $mod+Ctrl+1 move container to workspace $ws1
