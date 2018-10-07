@@ -666,11 +666,11 @@ c.content.host_blocking.enabled = True
 ## still be downloaded by clicking the download button in the pdf.js
 ## viewer.
 ## Type: Bool
-c.content.pdfjs = True
+#c.content.pdfjs = True
 
 ## Enable plugins in Web pages.
 ## Type: Bool
-c.content.plugins = True
+#c.content.plugins = True
 
 ## Draw the background color and images also when the page is printed.
 ## Type: Bool
@@ -1582,7 +1582,7 @@ config.bind('}}', 'navigate next -t')
 config.bind('$', 'move-to-end-of-line', mode='caret')
 config.bind('0', 'move-to-start-of-line', mode='caret')
 config.bind('<Ctrl-Space>', 'drop-selection', mode='caret')
-config.bind('zz', 'leave-mode', mode='caret')
+config.bind('<Escape>', 'leave-mode', mode='caret')
 config.bind('<Return>', 'yank selection', mode='caret')
 config.bind('<Space>', 'toggle-selection', mode='caret')
 config.bind('G', 'move-to-end-of-document', mode='caret')
@@ -1628,7 +1628,7 @@ config.bind('<Ctrl-U>', 'rl-unix-line-discard', mode='command')
 config.bind('<Ctrl-W>', 'rl-unix-word-rubout', mode='command')
 config.bind('<Ctrl-Y>', 'rl-yank', mode='command')
 config.bind('<Down>', 'command-history-next', mode='command')
-config.bind('zz', 'leave-mode', mode='command')
+config.bind('<Escape>', 'leave-mode', mode='command')
 config.bind('<Return>', 'command-accept', mode='command')
 config.bind('<Shift-Delete>', 'completion-item-del', mode='command')
 config.bind('<Shift-Tab>', 'completion-item-focus prev', mode='command')
@@ -1639,16 +1639,16 @@ config.bind('<Up>', 'command-history-prev', mode='command')
 config.bind('<Ctrl-B>', 'hint all tab-bg', mode='hint')
 config.bind('<Ctrl-F>', 'hint links', mode='hint')
 config.bind('<Ctrl-R>', 'hint --rapid links tab-bg', mode='hint')
-config.bind('zz', 'leave-mode', mode='hint')
+config.bind('<Escape>', 'leave-mode', mode='hint')
 config.bind('<Return>', 'follow-hint', mode='hint')
 
 ## Bindings for insert mode
 config.bind('<Ctrl-E>', 'open-editor', mode='insert')
-config.bind('zz', 'leave-mode', mode='insert')
+config.bind('<Escape>', 'leave-mode', mode='insert')
 config.bind('<Shift-Ins>', 'insert-text {primary}', mode='insert')
 
 ## Bindings for passthrough mode
-config.bind('zz', 'leave-mode', mode='passthrough')
+config.bind('<Escape>', 'leave-mode', mode='passthrough')
 
 ## Bindings for prompt mode
 config.bind('<Alt-B>', 'rl-backward-word', mode='prompt')
@@ -1667,7 +1667,7 @@ config.bind('<Ctrl-W>', 'rl-unix-word-rubout', mode='prompt')
 config.bind('<Ctrl-X>', 'prompt-open-download', mode='prompt')
 config.bind('<Ctrl-Y>', 'rl-yank', mode='prompt')
 config.bind('<Down>', 'prompt-item-focus next', mode='prompt')
-config.bind('zz', 'leave-mode', mode='prompt')
+config.bind('<Escape>', 'leave-mode', mode='prompt')
 config.bind('<Return>', 'prompt-accept', mode='prompt')
 config.bind('<Shift-Tab>', 'prompt-item-focus prev', mode='prompt')
 config.bind('<Tab>', 'prompt-item-focus next', mode='prompt')
@@ -1676,7 +1676,7 @@ config.bind('n', 'prompt-accept no', mode='prompt')
 config.bind('y', 'prompt-accept yes', mode='prompt')
 
 ## Bindings for register mode
-config.bind('zz', 'leave-mode', mode='register')
+config.bind('<Escape>', 'leave-mode', mode='register')
 
 ## Bindings for yesno mode
 # config.bind('<Alt-Shift-Y>', 'prompt-yank --sel', mode='yesno')
