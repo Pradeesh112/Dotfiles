@@ -54,14 +54,15 @@ bindsym $mod+Shift+comma exec light -U 5
 # Autostart applications
 exec --no-startup-id nitrogen --restore; sleep 1;
 exec --no-startup-id redshift
-exec_always compton  
+exec --no-startup-id compton  
 exec --no-startup-id syndaemon -i 1.5 -k -R -t
 exec --no-startup-id qutebrowser
+exec --no-startup-id urxvt -e 'tmux'
 exec --no-startup-id xautolock -time 10 -locker "betterlockscreen -l"
 
 # Start Applications
-bindsym $mod+F1 exec qutebrowser
-bindsym $mod+F2 exec urxvt -e 'ranger'
+bindsym $mod+F2 exec qutebrowser
+bindsym $mod+F1 exec urxvt -e 'ranger'
 bindsym $mod+F3 exec urxvt -e 'cmus'
 bindsym $mod+F4 exec urxvt -e 'rtv'
 bindsym $mod+F5 exec thunar
@@ -82,9 +83,9 @@ bindsym Print exec --no-startup-id scrot '%Y-%m-%d-%s.jpg' -e 'mv $f ~/Pictures/
 for_window [urgent=latest] focus
 
 # Open applications on specific workspaces
-assign [class="qutebrowser"] $ws1
+assign [class="qutebrowser"] $ws2
 for_window [class="^qutebrowser$"] focus
-assign [class="URxvt"] $ws2
+assign [class="URxvt"] $ws1
 for_window [class="^URxvt$"] focus
 for_window [class="Spotify"] move to workspace $ws3
 for_window [class="^Spotify$"] focus
@@ -162,10 +163,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j focus left
-bindsym $mod+Shift+k focus right
-bindsym $mod+Shift+l focus up
-bindsym $mod+Shift+semicolon focus down
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+l move right
+bindsym $mod+Shift+j move up
+bindsym $mod+Shift+k move down
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -200,8 +201,8 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # Workspace names
-set $ws1 
-set $ws2 
+set $ws1 
+set $ws2   
 set $ws3 
 set $ws4  
 set $ws5 
