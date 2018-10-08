@@ -70,13 +70,14 @@ bindsym $mod+F6 exec evince
 bindsym $mod+F7 exec bleachbit
 bindsym $mod+F8 exec transmission-gtk
 bindsym $mod+F9 exec popcorntime
-#bindsym $mod+c exec urxvt -e 'bc'
+bindsym $mod+a exec urxvt -e 'bc'
 bindsym $mod+s exec spotify
 bindsym $mod+t exec urxvt -e 'tmux'
 bindsym $mod+Shift+n exec nitrogen
 bindsym $mod+Ctrl+n exec urxvt -e 'nmtui'
 bindsym $mod+Shift+a exec lxappearance
 bindsym $mod+Ctrl+a exec qt5ct
+bindsym $mod+b exec bitwarden-bin
 bindsym Print exec --no-startup-id scrot '%Y-%m-%d-%s.jpg' -e 'mv $f ~/Pictures/Screenshots'
 
 # switch to workspace with urgent window automatically
@@ -103,6 +104,8 @@ assign [class="Transmission-gtk"] $ws8
 for_window [class="^Transmission-gtk$"] focus
 assign [class="Popcorn-Time"] $ws9
 for_window [class="^Popcorn-Time$"] focus
+assign [class="Bitwarden"] $ws9
+for_window [class="^Bitwarden"] focus
  
 # Open specific applications in floating mode
 for_window [title="File Transfer*"] floating enable
@@ -199,7 +202,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+#bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
