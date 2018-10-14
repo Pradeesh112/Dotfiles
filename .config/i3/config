@@ -58,7 +58,7 @@ exec --no-startup-id compton
 exec --no-startup-id syndaemon -i 1.5 -k -R -t
 exec --no-startup-id qutebrowser
 #exec --no-startup-id urxvt -e 'tmux'
-exec --no-startup-id xautolock -time 10 -locker "betterlockscreen -l"
+#exec --no-startup-id xautolock -time 10 -locker "betterlockscreen -l"
 
 # Start Applications
 bindsym $mod+F1 exec qutebrowser
@@ -78,7 +78,7 @@ bindsym $mod+Ctrl+n exec urxvt -e 'nmtui'
 bindsym $mod+Shift+a exec lxappearance
 bindsym $mod+Ctrl+a exec qt5ct
 bindsym $mod+b exec bitwarden-bin
-bindsym Print exec --no-startup-id scrot '%Y-%m-%d-%s.jpg' -e 'mv $f ~/Pictures/Screenshots'
+bindsym Print exec --no-startup-id scrot -q 100 '%Y-%m-%d-%s.jpg' -e 'mv $f ~/Pictures/Screenshots'
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
