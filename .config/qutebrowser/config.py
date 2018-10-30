@@ -1376,6 +1376,7 @@ c.url.searchengines = {
         'bc': 'https://www.bitchute.com/search/?q={}&sort=date_created%20desc',
         'f': 'https://flipkart.com/search?q={}',
         'a': 'https://www.amazon.in/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords={}',
+        'd': 'https://en.wiktionary.org/wiki/{}',
         }
 ## Page(s) to open at the start.
 ## Type: List of FuzzyUrl, or FuzzyUrl
@@ -1411,11 +1412,13 @@ c.url.start_pages = ['http://portal.actcorp.in/web/chn/home']
 # c.zoom.text_only = False
 
 ## watch videos via mpv
-config.bind('<Ctrl-Shift-a>', 'hint links spawn --detach mpv --force-window yes {hint-url}')
+config.bind('<Ctrl-Shift-m>', 'hint links spawn --detach mpv --force-window yes {hint-url}')
 
 ## extracting videos and audio via youtube-dl and you-get
 config.bind('<Shift-v>', 'hint links spawn urxvt -e youtube-dl {hint-url}')
+config.bind('<Ctrl-Shift-v>', 'hint links spawn urxvt -e youtube-dl --no-playlist {hint-url}')
 config.bind('<Shift-a>', 'hint links spawn urxvt -e youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 {hint-url}')
+config.bind('<Ctrl-Shift-a>', 'hint links spawn urxvt -e youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 --no-playlist {hint-url}')
 config.bind('<shift-y>', 'hint links spawn urxvt -e you-get {hint-url}')
 
 ## Bindings for normal mode
@@ -1494,10 +1497,10 @@ config.bind('O', 'set-cmd-text -s :open -t')
 config.bind('PP', 'open -t -- {primary}')
 config.bind('Pp', 'open -t -- {clipboard}')
 config.bind('R', 'reload -f')
-config.bind('Sb', 'open qute://bookmarks#bookmarks')
-config.bind('Sh', 'open qute://history')
-config.bind('Sq', 'open qute://bookmarks')
-config.bind('Ss', 'open qute://settings')
+#config.bind('Sb', 'open qute://bookmarks#bookmarks')
+config.bind('Sh', 'open qute://history/')
+#config.bind('Sq', 'open qute://bookmarks')
+#config.bind('Ss', 'open qute://settings')
 config.bind('T', 'tab-focus')
 config.bind('ZQ', 'quit')
 config.bind('ZZ', 'quit --save')
@@ -1560,7 +1563,7 @@ config.bind('wh', 'back -w')
 config.bind('wi', 'inspector')
 config.bind('wl', 'forward -w')
 config.bind('wo', 'set-cmd-text -s :open -w')
-config.bind('wp', 'open -w -- {clipboard}')
+config.bind('wp', 'open -t -- {clipboard}')
 config.bind('x', 'tab-close')
 #config.bind('xO', 'set-cmd-text :open -b -r {url:pretty}')
 #config.bind('xb', 'config-cycle statusbar.hide')
