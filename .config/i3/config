@@ -58,7 +58,7 @@ exec --no-startup-id compton
 exec --no-startup-id syndaemon -i 1.5 -k -R -t
 exec --no-startup-id qutebrowser
 #exec --no-startup-id urxvt -e 'tmux'
-#exec --no-startup-id xautolock -time 10 -locker "betterlockscreen -l"
+exec --no-startup-id xautolock -time 15 -locker "betterlockscreen -l"
 
 # Start Applications
 bindsym $mod+F1 exec qutebrowser
@@ -69,7 +69,7 @@ bindsym $mod+F5 exec thunar
 bindsym $mod+F6 exec evince
 bindsym $mod+F7 exec bleachbit
 bindsym $mod+F8 exec transmission-gtk
-bindsym $mod+F9 exec popcorntime
+bindsym $mod+F9 exec stremio-beta
 bindsym $mod+a exec urxvt -e 'bc'
 bindsym $mod+s exec spotify
 bindsym $mod+t exec urxvt -e 'tmux'
@@ -102,9 +102,9 @@ assign [class="Bleachbit"] $ws7
 for_window [class="^Bleachbit$"] focus
 assign [class="Transmission-gtk"] $ws8
 for_window [class="^Transmission-gtk$"] focus
-assign [class="Popcorn-Time"] $ws9
-for_window [class="^Popcorn-Time$"] focus
-assign [class="Bitwarden"] $ws9
+assign [class="Stremio"] $ws9
+for_window [class="^Stremio$"] focus
+assign [class="Bitwarden"] $ws4
 for_window [class="^Bitwarden"] focus
  
 # Open specific applications in floating mode
@@ -123,7 +123,6 @@ for_window [class="VirtualBox Manager"] floating enable border pixel 3
 for_window [class="qt5ct"] floating enable border pixel 3
 for_window [class="qutebrowser"] border pixel 3
 for_window [class="Sxiv"] floating enable border pixel 3
-for_window [class="Popcorn-Time"] border pixel 3
 for_window [class="Evince"] border pixel 3
 
 # cmus palying music via scratchpad
