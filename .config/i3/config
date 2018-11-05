@@ -27,7 +27,7 @@ bindsym $mod+Return exec urxvt
 bindsym $mod+Shift+q kill
 
 # rofi 
-bindsym $mod+d exec rofi -show drun -theme arthur
+bindsym $mod+d exec rofi -show drun -theme arthur 
 
 ###########################################################################
 
@@ -104,7 +104,7 @@ assign [class="Transmission-gtk"] $ws8
 for_window [class="^Transmission-gtk$"] focus
 assign [class="Stremio"] $ws9
 for_window [class="^Stremio$"] focus
-assign [class="Bitwarden"] $ws4
+assign [class="Bitwarden"] $ws6
 for_window [class="^Bitwarden"] focus
  
 # Open specific applications in floating mode
