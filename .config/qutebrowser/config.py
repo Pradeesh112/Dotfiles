@@ -11,12 +11,12 @@
 ## aliases, while the values are the commands they map to.
 ## Type: Dict
 c.aliases = {
-         'w': 'session-save',
          'q': 'quit',
          'wq': 'quit --save',
          'r': 'restart',
          'b': 'bookmark-add',
          'bd': 'bookmark-del',
+         'qd': 'quickmark-del',
          'f': 'fullscreen',
          'h': 'history',
          'hc': 'history-clear',
@@ -666,11 +666,11 @@ c.content.host_blocking.enabled = True
 ## still be downloaded by clicking the download button in the pdf.js
 ## viewer.
 ## Type: Bool
-#c.content.pdfjs = True
+c.content.pdfjs = True
 
 ## Enable plugins in Web pages.
 ## Type: Bool
-#c.content.plugins = True
+c.content.plugins = True
 
 ## Draw the background color and images also when the page is printed.
 ## Type: Bool
@@ -998,7 +998,7 @@ c.hints.hide_unmatched_rapid_hints = True
 ## Time (in milliseconds) from pressing a key to seeing the keyhint
 ## dialog.
 ## Type: Int
-c.keyhint.delay = 5
+c.keyhint.delay = 1
 
 ## Rounding radius (in pixels) for the edges of the keyhint dialog.
 ## Type: Int
@@ -1483,7 +1483,7 @@ config.bind('<forward>', 'forward')
 config.bind('=', 'zoom')
 config.bind('?', 'set-cmd-text ?')
 config.bind('@', 'run-macro')
-config.bind('B', 'set-cmd-text -s :quickmark-load -t')
+config.bind('tn', 'set-cmd-text -s :quickmark-load -t')
 config.bind('D', 'tab-close -o')
 config.bind('F', 'hint all tab')
 config.bind('G', 'scroll-to-perc')
@@ -1491,14 +1491,12 @@ config.bind('H', 'back')
 config.bind('J', 'tab-prev')
 config.bind('K', 'tab-next')
 config.bind('L', 'forward')
-config.bind('M', 'bookmark-add')
+config.bind('b', 'bookmark-add')
 config.bind('N', 'search-prev')
-config.bind('O', 'set-cmd-text -s :open -t')
 config.bind('PP', 'open -t -- {primary}')
 config.bind('Pp', 'open -t -- {clipboard}')
 config.bind('R', 'reload -f')
-#config.bind('Sb', 'open qute://bookmarks#bookmarks')
-config.bind('Sh', 'open qute://history/')
+config.bind('hh', 'open qute://history/')
 #config.bind('Sq', 'open qute://bookmarks')
 #config.bind('Ss', 'open qute://settings')
 config.bind('T', 'tab-focus')
@@ -1508,7 +1506,7 @@ config.bind('[[', 'navigate prev')
 config.bind(']]', 'navigate next')
 config.bind('`', 'enter-mode set_mark')
 config.bind('ad', 'download-cancel')
-config.bind('b', 'set-cmd-text -s :quickmark-load')
+config.bind('q', 'set-cmd-text -s :quickmark-load')
 config.bind('cd', 'download-clear')
 config.bind('co', 'tab-only')
 config.bind('d', 'scroll-page 0 0.3')
@@ -1516,13 +1514,13 @@ config.bind('d', 'scroll-page 0 0.3')
 config.bind('f', 'hint')
 config.bind('g$', 'tab-focus -1')
 config.bind('g0', 'tab-focus 1')
-config.bind('gB', 'set-cmd-text -s :bookmark-load -t')
-config.bind('gC', 'tab-clone')
-config.bind('gO', 'set-cmd-text :open -t -r {url:pretty}')
-config.bind('gU', 'navigate up -t')
+#config.bind('gB', 'set-cmd-text -s :bookmark-load -t')
+#config.bind('gC', 'tab-clone')
+#config.bind('gO', 'set-cmd-text :open -t -r {url:pretty}')
+#config.bind('gU', 'navigate up -t')
 config.bind('g^', 'tab-focus 1')
 config.bind('ga', 'open -t')
-config.bind('gb', 'set-cmd-text -s :bookmark-load')
+#config.bind('gb', 'set-cmd-text -s :bookmark-load')
 config.bind('gd', 'download')
 config.bind('gf', 'view-source')
 config.bind('gg', 'scroll-to-perc 0')
@@ -1542,7 +1540,7 @@ config.bind('n', 'search-next')
 config.bind('o', 'set-cmd-text -s :open')
 config.bind('pP', 'open -- {primary}')
 config.bind('pp', 'open -- {clipboard}')
-config.bind('q', 'record-macro')
+#config.bind('q', 'record-macro')
 config.bind('r', 'reload')
 config.bind('sf', 'save')
 config.bind('sk', 'set-cmd-text -s :bind')
@@ -1554,9 +1552,9 @@ config.bind('tl', 'forward -t')
 config.bind('u', 'scroll-page 0 -0.3')
 #config.bind('U', 'undo')
 config.bind('v', 'enter-mode caret')
-config.bind('wB', 'set-cmd-text -s :bookmark-load -w')
-config.bind('wO', 'set-cmd-text :open -w {url:pretty}')
-config.bind('wP', 'open -w -- {primary}')
+#config.bind('wB', 'set-cmd-text -s :bookmark-load -w')
+#config.bind('wO', 'set-cmd-text :open -w {url:pretty}')
+#config.bind('wP', 'open -w -- {primary}')
 config.bind('wb', 'set-cmd-text -s :quickmark-load -w')
 config.bind('wf', 'hint all window')
 config.bind('wh', 'back -w')
