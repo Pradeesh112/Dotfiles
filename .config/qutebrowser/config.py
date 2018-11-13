@@ -26,11 +26,11 @@ c.aliases = {
 ## Time interval (in milliseconds) between auto-saves of
 ## config/cookies/etc.
 ## Type: Int
-# c.auto_save.interval = 15000
+c.auto_save.interval = 15000
 
 ## Always restore open sites when qutebrowser is reopened.
 ## Type: Bool
-# c.auto_save.session = False
+c.auto_save.session = True
 
 ## Backend to use to display websites. qutebrowser supports two different
 ## web rendering engines / backends, QtWebKit and QtWebEngine. QtWebKit
@@ -575,7 +575,7 @@ c.content.host_blocking.enabled = True
 ## host per line - A zip-file of any of the above, with either only one
 ## file, or a file   named `hosts` (with any extension).
 ## Type: List of Url
-# c.content.host_blocking.lists = ['https://www.malwaredomainlist.com/hostslist/hosts.txt', 'http://someonewhocares.org/hosts/hosts', 'http://winhelp2002.mvps.org/hosts.zip', 'http://malwaredomains.lehigh.edu/files/justdomains.zip', 'https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&mimetype=plaintext']
+c.content.host_blocking.lists = ['/etc/hosts']
 
 ## List of domains that should always be loaded, despite being ad-
 ## blocked. Domains may contain * and ? wildcards and are otherwise
@@ -1365,8 +1365,6 @@ c.url.default_page = 'https://google.com/'
 c.url.searchengines = {
         'DEFAULT': 'https://google.com/search?hl=en&q={}',
         'r': 'https://reddit.com/r/{}',
-        'pb': 'http://thepiratebay.org/search/{}',
-        'ph': 'http://pornhub.com/video/search?search={}',
         'gh': 'https://github.com/search?utf8=%E2%9C%93&q={}&type=',
         'aw': 'https://wiki.archlinux.org/index.php?title=Special%3ASearch&search={}',
         'ap': 'https://archlinux.org/packages/?sort=&q={}',
@@ -1380,7 +1378,7 @@ c.url.searchengines = {
         }
 ## Page(s) to open at the start.
 ## Type: List of FuzzyUrl, or FuzzyUrl
-c.url.start_pages = ['http://portal.actcorp.in/web/chn/home']
+c.url.start_pages = ['https://google.com']
 
 ## URL parameters to strip with `:yank url`.
 ## Type: List of String
@@ -1410,6 +1408,12 @@ c.url.start_pages = ['http://portal.actcorp.in/web/chn/home']
 ## Apply the zoom factor on a frame only to the text or to all content.
 ## Type: Bool
 # c.zoom.text_only = False
+
+## opens youtube 
+config.bind('yo','open https://www.youtube.com/')
+
+## opens multiple sites
+config.bind('n','open https://www.youtube.com/;;open -t https://mail.protonmail.com/login;;open -t https://www.reddit.com/r/linux/')
 
 ## watch videos via mpv
 config.bind('<Ctrl-Shift-m>', 'hint links spawn --detach mpv --force-window yes {hint-url}')
@@ -1536,7 +1540,7 @@ config.bind('j', 'scroll-page 0 0.3')
 config.bind('k', 'scroll-page 0 -0.3')
 config.bind('l', 'scroll right')
 config.bind('m', 'quickmark-save')
-config.bind('n', 'search-next')
+#config.bind('n', 'search-next')
 config.bind('o', 'set-cmd-text -s :open')
 config.bind('pP', 'open -- {primary}')
 config.bind('pp', 'open -- {clipboard}')
