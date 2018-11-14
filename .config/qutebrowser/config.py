@@ -26,11 +26,11 @@ c.aliases = {
 ## Time interval (in milliseconds) between auto-saves of
 ## config/cookies/etc.
 ## Type: Int
-c.auto_save.interval = 15000
+#c.auto_save.interval = 15000
 
 ## Always restore open sites when qutebrowser is reopened.
 ## Type: Bool
-c.auto_save.session = True
+#c.auto_save.session = True
 
 ## Backend to use to display websites. qutebrowser supports two different
 ## web rendering engines / backends, QtWebKit and QtWebEngine. QtWebKit
@@ -1411,6 +1411,17 @@ c.url.start_pages = ['https://google.com']
 
 ## opens youtube 
 config.bind('yo','open https://www.youtube.com/')
+config.bind('cb','open https://www.cricbuzz.com/')
+config.bind('pm','open https://mail.protonmail.com/login/')
+config.bind('rt','open https://old.reddit.com/')
+config.bind('mm','open https://medium.com/')
+config.bind('bc','open https://www.bitchute.com/')
+config.bind('ua','open https://unacademy.com/')
+config.bind('ib','open https://iasbaba.com/')
+config.bind('us','open http://www.usavsus.info/')
+config.bind('jm','open https://jordanmaxwellresearch.is/')
+config.bind('zh','open https://www.zerohedge.com/')
+
 
 ## opens multiple sites
 config.bind('n','open https://www.youtube.com/;;open -t https://mail.protonmail.com/login;;open -t https://www.reddit.com/r/linux/')
