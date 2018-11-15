@@ -26,11 +26,11 @@ c.aliases = {
 ## Time interval (in milliseconds) between auto-saves of
 ## config/cookies/etc.
 ## Type: Int
-#c.auto_save.interval = 15000
+c.auto_save.interval = 15000
 
 ## Always restore open sites when qutebrowser is reopened.
 ## Type: Bool
-#c.auto_save.session = True
+c.auto_save.session = True
 
 ## Backend to use to display websites. qutebrowser supports two different
 ## web rendering engines / backends, QtWebKit and QtWebEngine. QtWebKit
@@ -1409,18 +1409,27 @@ c.url.start_pages = ['https://google.com']
 ## Type: Bool
 # c.zoom.text_only = False
 
-## opens youtube 
+## shortcuts for sites 
 config.bind('yo','open https://www.youtube.com/')
-config.bind('cb','open https://www.cricbuzz.com/')
-config.bind('pm','open https://mail.protonmail.com/login/')
-config.bind('rt','open https://old.reddit.com/')
-config.bind('mm','open https://medium.com/')
-config.bind('bc','open https://www.bitchute.com/')
-config.bind('ua','open https://unacademy.com/')
-config.bind('ib','open https://iasbaba.com/')
-config.bind('us','open http://www.usavsus.info/')
-config.bind('jm','open https://jordanmaxwellresearch.is/')
 config.bind('zh','open https://www.zerohedge.com/')
+config.bind('pm','open https://mail.protonmail.com/login/')
+config.bind('cz','open https://www.cricbuzz.com/')
+config.bind('cr','open https://old.reddit.com/')
+config.bind('cm','open https://medium.com/')
+config.bind('cb','open https://www.bitchute.com/')
+config.bind('cu','open https://unacademy.com/')
+config.bind('ca','open https://iasbaba.com/')
+config.bind('cj','open https://jordanmaxwellresearch.is/')
+config.bind('ch','open https://hangouts.google.com/') 
+config.bind('cl','open https://www.archlinux.org/')
+config.bind('cg','open https://gitlab.com/Pradeesh112/Dotfiles')
+config.bind('cc','open https://github.com/Pradeesh112/dotfiles')
+config.bind('cd','open http://dotshare.it/')
+config.bind('cs','open https://app.simplenote.com/signin')
+config.bind('cw','open https://vault.bitwarden.com/#/')
+config.bind('cp','open https://selfcare.actcorp.in/web/chn/home')
+config.bind('ci','open https://www.indianbank.net.in/jsp/startIB.jsp')
+config.bind('co','open https://www.iobnet.co.in/ibanking/login.do')
 
 
 ## opens multiple sites
