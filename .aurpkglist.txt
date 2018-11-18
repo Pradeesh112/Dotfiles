@@ -1,0 +1,13 @@
+betterlockscreen
+bitwarden-bin
+dtrx
+i3lock-fancy-git
+light-git
+qt5-webengine-widevine
+ranger-git
+rtv
+spotify
+stremio-beta
+thunar-extended
+windscribe-cli
+yay
