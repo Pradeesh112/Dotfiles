@@ -27,7 +27,7 @@ bindsym $mod+Return exec urxvt
 bindsym $mod+Shift+q kill
 
 # rofi 
-bindsym $mod+d exec rofi -show drun -theme arthur 
+bindsym $mod+d exec rofi -show drun -theme arthur  
 
 ###########################################################################
 
@@ -56,7 +56,7 @@ exec --no-startup-id nitrogen --restore; sleep 1;
 exec --no-startup-id redshift
 exec --no-startup-id compton  
 exec --no-startup-id syndaemon -i 1.5 -k -R -t
-exec --no-startup-id qutebrowser
+#exec --no-startup-id qutebrowser
 #exec --no-startup-id urxvt -e 'tmux'
 exec --no-startup-id xautolock -time 15 -locker "betterlockscreen -l"
 
@@ -70,11 +70,9 @@ bindsym $mod+F6 exec evince
 bindsym $mod+F7 exec bleachbit
 bindsym $mod+F8 exec transmission-gtk
 bindsym $mod+F9 exec stremio-beta
-bindsym $mod+a exec urxvt -e 'bc'
 bindsym $mod+s exec spotify
 bindsym $mod+t exec urxvt -e 'tmux'
 bindsym $mod+Shift+n exec nitrogen
-bindsym $mod+Ctrl+n exec urxvt -e 'nmtui'
 bindsym $mod+Shift+a exec lxappearance
 bindsym $mod+Ctrl+a exec qt5ct
 bindsym $mod+b exec bitwarden-bin
@@ -128,7 +126,9 @@ for_window [class="Evince"] border pixel 3
 # cmus palying music via scratchpad
 for_window [instance="scratchpad"] move scratchpad, scratchpad show, resize set 800 550, border pixel 3, move position center
 bindsym $mod+c exec --no-startup-id urxvt -name scratchpad -e cmus
-
+bindsym $mod+i exec --no-startup-id urxvt -name scratchpad -e nmtui
+bindsym $mod+a exec --no-startup-id urxvt -name scratchpad -e bc
+ 
 # Make the currently focused window a scratchpad
 bindsym $mod+period move scratchpad
 
