@@ -37,22 +37,14 @@ video/x-youtube; mpv --ytdl-format=bestvideo+bestaudio/best '%s' --autofit 640x4
 # Mpv is a simple and effective video streamer
 video/*; mpv '%s' --autofit 640x480 --loop=inf; test=test -n "$DISPLAY"
 
-# Ascii videos
-video/x-youtube; youtube-dl -q -o - '%s' | mpv -cache 8192 -vo caca -quiet -; needsterminal
-video/*; wget '%s' -O - | mpv -cache 8192 -vo caca -quiet -; needsterminal 
-
 ###############################################################################
 # Commands below this point will attempt to display media directly in the
 # terminal when a desktop is not available (e.g. inside of an SSH session)
 ###############################################################################
 
-# View images directly in your terminal with iTerm2
-# curl -L https://iterm2.com/misc/install_shell_integration_and_utilities.sh | bash
-# image/*; curl -s %s | ~/.iterm2/imgcat && read -n 1; needsterminal
-
 # View true images in the terminal, supported by rxvt-unicode, xterm and st
-# Requires the w3m-img package
-# image/*; w3m -o 'ext_image_viewer=off' '%s'; needsterminal
+Requires the w3m-img package
+image/*; w3m -o 'ext_image_viewer=off' '%s'; needsterminal
 
 # Don't have a solution for albums yet
 image/x-imgur-album; echo
@@ -70,5 +62,5 @@ video/x-youtube; mpv -vo drm -quiet '%s'; needsterminal
 video/*; mpv -vo drm -quiet '%s'; needsterminal
 
 # Ascii videos
-# video/x-youtube; youtube-dl -q -o - '%s' | mplayer -cache 8192 -vo caca -quiet -; needsterminal
-# video/*; wget '%s' -O - | mplayer -cache 8192 -vo caca -quiet -; needsterminal
+video/x-youtube; youtube-dl -q -o - '%s' | mplayer -cache 8192 -vo caca -quiet -; needsterminal
+video/*; wget '%s' -O - | mplayer -cache 8192 -vo caca -quiet -; needsterminal
