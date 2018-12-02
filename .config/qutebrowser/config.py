@@ -666,7 +666,7 @@ c.content.host_blocking.lists = ['/etc/hosts']
 ## still be downloaded by clicking the download button in the pdf.js
 ## viewer.
 ## Type: Bool
-c.content.pdfjs = True
+#c.content.pdfjs = True
 
 ## Enable plugins in Web pages.
 ## Type: Bool
@@ -1375,6 +1375,7 @@ c.url.searchengines = {
         'f': 'https://flipkart.com/search?q={}',
         'a': 'https://www.amazon.in/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords={}',
         'd': 'https://en.wiktionary.org/wiki/{}',
+        'tw': 'https://twitter.com/{}', 
         }
 ## Page(s) to open at the start.
 ## Type: List of FuzzyUrl, or FuzzyUrl
@@ -1429,19 +1430,47 @@ config.bind('cs','open https://app.simplenote.com/signin')
 config.bind('cw','open https://vault.bitwarden.com/#/')
 config.bind('ce','open https://selfcare.actcorp.in/web/chn/home')
 config.bind('ci','open https://www.indianbank.net.in/jsp/startIB.jsp')
-config.bind('co','open https://www.iobnet.co.in/index1.htm')
+config.bind('co','open https://www.iobnet.co.in/ibanking/login.do')
 config.bind('ck','open https://www.skytorrents.lol/')
 config.bind('ct','open https://www.torlock.com/')
 config.bind('cp','open https://pirateproxy.gdn/recent')
 config.bind('cv','open http://tamilrockers.by/')
 config.bind('cy','open https://paytm.com/')
 config.bind('cq','open https://mypustak.com/proud-donors')
-config.bind('ct','open https://www.secondhandbooksindia.com/product.php')
 config.bind('cn','open http://www.upsc.gov.in/')
 config.bind('cf','open http://tplinkwifi.net/')
-config.bind('cx','open https://distrotest.net/')
+config.bind('cx','open http://www.speedtest.net/')
 
-## opens multiple sites
+## opens the sites in tab
+config.bind('zz','open -t https://www.cricbuzz.com/')
+config.bind('zr','open -t https://old.reddit.com/r/linux/')
+config.bind('zm','open -t https://medium.com/')
+config.bind('zb','open -t https://www.bitchute.com/')
+config.bind('zu','open -t https://unacademy.com/')
+config.bind('za','open -t https://iasbaba.com/')
+config.bind('zj','open -t https://jordanmaxwellresearch.is/')
+config.bind('zh','open -t https://hangouts.google.com/') 
+config.bind('zl','open -t https://www.archlinux.org/')
+config.bind('zg','open -t https://gitlab.com/Pradeesh112/Dotfiles')
+config.bind('zc','open -t https://github.com/Pradeesh112/dotfiles')
+config.bind('zd','open -t http://dotshare.it/')
+config.bind('zs','open -t https://app.simplenote.com/signin')
+config.bind('zw','open -t https://vault.bitwarden.com/#/')
+config.bind('ze','open -t https://selfcare.actcorp.in/web/chn/home')
+config.bind('zi','open -t https://www.indianbank.net.in/jsp/startIB.jsp')
+config.bind('zo','open -t https://www.iobnet.co.in/index1.htm')
+config.bind('zk','open -t https://www.skytorrents.lol/')
+config.bind('zt','open -t https://www.torlock.com/')
+config.bind('zp','open -t https://pirateproxy.gdn/recent')
+config.bind('zv','open -t http://tamilrockers.by/')
+config.bind('zy','open -t https://paytm.com/')
+config.bind('zq','open -t https://mypustak.com/proud-donors')
+config.bind('zt','open -t https://www.secondhandbooksindia.com/product.php')
+config.bind('zn','open -t http://www.upsc.gov.in/')
+config.bind('zf','open -t http://tplinkwifi.net/')
+config.bind('zx','open -t https://speedtest.net/')
+
+## opens multzple sites
 config.bind('n','open https://www.youtube.com/;;open -t https://mail.protonmail.com/login;;open -t https://www.reddit.com/r/linux/')
 
 ## watch videos via mpv
