@@ -1,5 +1,7 @@
 betterlockscreen
 bitwarden-bin
+cava
+downgrade
 dtrx
 i3lock-fancy-git
 light-git
@@ -9,5 +11,4 @@ rtv
 spotify
 stremio-beta
 thunar-extended
-windscribe-cli
 yay
