@@ -125,7 +125,7 @@ for_window [class="Evince"] border pixel 3
 
 # cmus palying music via scratchpad
 for_window [instance="scratchpad"] move scratchpad, scratchpad show, resize set 800 550, border pixel 3, move position center
-for_window [instance="yt"] move scratchpad, resize set 800 550, border pixel 3, move position center      
+for_window [instance="vid"] move scratchpad, resize set 800 550, border pixel 3, move position center      
 bindsym $mod+c exec --no-startup-id urxvt -name scratchpad -e cmus
 bindsym $mod+i exec --no-startup-id urxvt -name scratchpad -e nmtui
 bindsym $mod+a exec --no-startup-id urxvt -name scratchpad -e bc

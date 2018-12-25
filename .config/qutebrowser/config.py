@@ -1379,7 +1379,7 @@ c.url.searchengines = {
         }
 ## Page(s) to open at the start.
 ## Type: List of FuzzyUrl, or FuzzyUrl
-c.url.start_pages = ['https://google.com']
+c.url.start_pages = ['http://portal.actcorp.in/web/chn/home']
 
 ## URL parameters to strip with `:yank url`.
 ## Type: List of String
@@ -1412,7 +1412,7 @@ c.url.start_pages = ['https://google.com']
 
 ## shortcuts for sites 
 config.bind('yo','open https://www.youtube.com/')
-config.bind('zh','open https://www.zerohedge.com/')
+config.bind('ah','open https://www.zerohedge.com/')
 config.bind('pm','open https://mail.protonmail.com/login/')
 config.bind('cz','open https://www.cricbuzz.com/')
 config.bind('cr','open https://old.reddit.com/r/linux/')
@@ -1434,12 +1434,12 @@ config.bind('co','open https://www.iobnet.co.in/ibanking/login.do')
 config.bind('ck','open https://www.skytorrents.lol/')
 config.bind('ct','open https://www.torlock.com/')
 config.bind('cp','open https://pirateproxy.gdn/recent')
-config.bind('cv','open http://tamilrockers.cr/')
+config.bind('cv','open http://www.insightsonindia.com/')
 config.bind('cy','open https://paytm.com/')
 config.bind('cq','open https://mypustak.com/proud-donors')
 config.bind('cn','open http://www.upsc.gov.in/')
-config.bind('cf','open http://tplinkwifi.net/')
-config.bind('cx','open http://www.speedtest.net/')
+config.bind('cf','open https://mail.google.com/mail/u/0/#inbox')
+config.bind('cx','open https://mrunal.org/')
 
 ## opens the sites in tab
 config.bind('zz','open -t https://www.cricbuzz.com/')
@@ -1458,17 +1458,17 @@ config.bind('zs','open -t https://app.simplenote.com/signin')
 config.bind('zw','open -t https://vault.bitwarden.com/#/')
 config.bind('ze','open -t https://selfcare.actcorp.in/web/chn/home')
 config.bind('zi','open -t https://www.indianbank.net.in/jsp/startIB.jsp')
-config.bind('zo','open -t https://www.iobnet.co.in/index1.htm')
+config.bind('zo','open -t https://www.iobnet.co.in/ibanking/login.do')
 config.bind('zk','open -t https://www.skytorrents.lol/')
 config.bind('zt','open -t https://www.torlock.com/')
 config.bind('zp','open -t https://pirateproxy.gdn/recent')
-config.bind('zv','open -t http://tamilrockers.cr/')
+config.bind('zv','open -t http://www.insightsonindia.com/')
 config.bind('zy','open -t https://paytm.com/')
 config.bind('zq','open -t https://mypustak.com/proud-donors')
 config.bind('zt','open -t https://www.secondhandbooksindia.com/product.php')
 config.bind('zn','open -t http://www.upsc.gov.in/')
-config.bind('zf','open -t http://tplinkwifi.net/')
-config.bind('zx','open -t https://speedtest.net/')
+config.bind('zf','open -t https://mail.google.com/mail/u/0/#inbox')
+config.bind('zx','open -t https://mrunal.org/')
 
 ## opens multzple sites
 config.bind('n','open https://www.youtube.com/;;open -t https://mail.protonmail.com/login;;open -t https://www.reddit.com/r/linux/')
@@ -1477,11 +1477,11 @@ config.bind('n','open https://www.youtube.com/;;open -t https://mail.protonmail.
 config.bind('<Ctrl-Shift-m>', 'hint links spawn --detach mpv --force-window yes {hint-url}')
 
 ## extracting videos and audio via youtube-dl and you-get
-config.bind('<Shift-v>', 'hint links spawn urxvt -name yt -e youtube-dl {hint-url}')
-config.bind('<Ctrl-Shift-v>', 'hint links spawn urxvt -name yt -e youtube-dl --no-playlist {hint-url}')
-config.bind('<Shift-a>', 'hint links spawn urxvt -name yt -e youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 {hint-url}')
-config.bind('<Ctrl-Shift-a>', 'hint links spawn urxvt -name yt -e youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 --no-playlist {hint-url}')
-config.bind('<shift-y>', 'hint links spawn urxvt -name yt -e you-get {hint-url}')
+config.bind('<Shift-v>', 'hint links spawn urxvt -name vid -e youtube-dl {hint-url}')
+config.bind('<Ctrl-Shift-v>', 'hint links spawn urxvt -name vid -e youtube-dl --no-playlist {hint-url}')
+config.bind('<Shift-a>', 'hint links spawn urxvt -name vid -e youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 {hint-url}')
+config.bind('<Ctrl-Shift-a>', 'hint links spawn urxvt -name vid -e youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 --no-playlist {hint-url}')
+config.bind('<shift-y>', 'hint links spawn urxvt -name vid -e you-get {hint-url}')
 
 ## Bindings for normal mode
 config.bind("'", 'enter-mode jump_mark')
