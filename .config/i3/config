@@ -39,7 +39,7 @@ bindsym $mod+d exec rofi -show drun -theme arthur
 bindsym $mod+semicolon exec pactl set-sink-volume 0 +5% 
 bindsym $mod+apostrophe exec pactl set-sink-volume 0 -5% 
 bindsym $mod+Shift+apostrophe exec pactl set-sink-mute 0 toggle 
-bindsym $mod+p exec pavucontrol
+#bindsym $mod+p exec pavucontrol
 
 ############################################################################
 ###########################Screen brightness controls#######################
@@ -123,12 +123,14 @@ for_window [class="qutebrowser"] border pixel 3
 for_window [class="Sxiv"] floating enable border pixel 3
 for_window [class="Evince"] border pixel 3
 
-# cmus palying music via scratchpad
+# Scratchpad
 for_window [instance="scratchpad"] move scratchpad, scratchpad show, resize set 800 550, border pixel 3, move position center
 for_window [instance="vid"] move scratchpad, resize set 800 550, border pixel 3, move position center      
+for_window [instance="aud"] move scratchpad, scratchpad show, resize set 600 450, border pixel 3, move position center 
 bindsym $mod+c exec --no-startup-id urxvt -name scratchpad -e cmus
 bindsym $mod+i exec --no-startup-id urxvt -name scratchpad -e nmtui
 bindsym $mod+a exec --no-startup-id urxvt -name scratchpad -e bc
+bindsym $mod+p exec --no-startup-id urxvt -name aud -e ncpamixer
  
 # Make the currently focused window a scratchpad
 bindsym $mod+period move scratchpad
