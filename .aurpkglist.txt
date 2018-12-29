@@ -12,3 +12,4 @@ spotify
 stremio-beta
 thunar-extended
 yay
+ncpamixer 
