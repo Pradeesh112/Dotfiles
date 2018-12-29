@@ -1,6 +1,5 @@
 betterlockscreen
 bitwarden-bin
-cava
 downgrade
 dtrx
 i3lock-fancy-git
