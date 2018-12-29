@@ -73,7 +73,6 @@ p7zip
 pacman
 papirus-icon-theme
 patch
-pavucontrol
 pciutils
 pdfjs
 perl
@@ -110,7 +109,6 @@ unrar
 unzip
 usbutils
 util-linux
-vi
 vim
 w3m
 which
@@ -125,5 +123,4 @@ xfsprogs
 xorg-server
 xorg-xinit
 xorg-xkill
-you-get
 youtube-dl
