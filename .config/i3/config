@@ -160,10 +160,10 @@ bindsym $mod+l exec betterlockscreen -l
 #bindsym $mod+n border normal
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus right
-bindsym $mod+u focus up
-bindsym $mod+y focus down
+bindsym $mod+j focus down
+bindsym $mod+k focus left
+#bindsym $mod+u focus left
+#bindsym $mod+y focus right
 
 # alternatively, you can use the cursor keys
 bindsym $mod+Left focus left
@@ -218,7 +218,7 @@ set $ws5 ""
 set $ws6 ""
 set $ws7 ""
 set $ws8 ""
-set $ws9 ""
+set $ws9 ""
 
 # switch to workspace
 bindsym $mod+1    workspace $ws1
@@ -265,10 +265,9 @@ gaps outer 05
 bindsym $mod+Shift+d gaps inner all set 0; gaps outer all set 0
 bindsym $mod+Shift+s gaps inner all set 05; gaps outer all set 05
 
-# Additionally, you can issue commands with the following syntax. This is usefull to bind keys to changing the gap size.
-# gaps inner|outer current|all set|plus|minus <px>
-#gaps inner all set 10
-#gaps outer all plus 5
+# Resize Windows on the fly
+bindsym $mod+g	      gaps outer current plus 5
+bindsym $mod+Shift+g  gaps outer current minus 5
 
 # Smart gaps (gaps used if only more than one container on the workspace)
 smart_gaps on
@@ -276,43 +275,6 @@ smart_gaps on
 # Smart borders (draw borders around container only if it is not the only container on this workspace) 
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
 smart_borders on
-
-# Press $mod+Shift+g to enter the gap mode. Choose o or i for modifying outer/inner gaps. Press one of + / - (in-/decrement for current workspace) or 0 (remove gaps for current workspace). If you also press Shift with these keys, the change will be global for all workspaces.
-set $mode_gaps Gaps: (o) outer, (i) inner
-set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
-set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
-bindsym $mod+Shift+g mode "$mode_gaps"
-
-mode "$mode_gaps" {
-        bindsym o      mode "$mode_gaps_outer"
-        bindsym i      mode "$mode_gaps_inner"
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-}
-mode "$mode_gaps_inner" {
-        bindsym plus  gaps inner current plus 5
-        bindsym minus gaps inner current minus 5
-        bindsym 0     gaps inner current set 0
-
-        bindsym Shift+plus  gaps inner all plus 5
-        bindsym Shift+minus gaps inner all minus 5
-        bindsym Shift+0     gaps inner all set 0
-
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-}
-mode "$mode_gaps_outer" {
-        bindsym plus  gaps outer current plus 5
-        bindsym minus gaps outer current minus 5
-        bindsym 0     gaps outer current set 0
-
-        bindsym Shift+plus  gaps outer all plus 5
-        bindsym Shift+minus gaps outer all minus 5
-        bindsym Shift+0     gaps outer all set 0
-
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-}
 
 ###########################
 ### settings for resize ###
@@ -325,10 +287,10 @@ mode "resize" {
 # Pressing right will grow the windows width.
 # Pressing up will shrink the windows height.
 # Pressing down will grow the windows height.
-bindsym j resize shrink width 10 px or 10 ppt
-bindsym k resize grow height 10 px or 10 ppt
-bindsym l resize shrink height 10 px or 10 ppt
-bindsym semicolon resize grow width 10 px or 10 ppt
+bindsym j resize grow height 10 px or 10 ppt
+bindsym k resize shrink height 10 px or 10 ppt
+bindsym l resize grow width 10 px or 10 ppt
+bindsym semicolon resize shrink width 10 px or 10 ppt
 
 # same bindings, but for the arrow keys
 bindsym Left resize shrink width 10 px or 10 ppt
