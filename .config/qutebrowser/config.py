@@ -406,7 +406,7 @@ c.colors.tabs.selected.odd.fg = solarized['base3']
 ## Background color for webpages if unset (or empty to use the theme's
 ## color)
 ## Type: QtColor
-# c.colors.webpage.bg = 'white'
+c.colors.webpage.bg = 'black'
 
 ## Number of commands to save in the command history. 0: no history / -1:
 ## unlimited
@@ -445,7 +445,7 @@ c.colors.tabs.selected.odd.fg = solarized['base3']
 ##   - always: Whenever a completion is available.
 ##   - auto: Whenever a completion is requested.
 ##   - never: Never.
-# c.completion.show = 'always'
+c.completion.show = 'never'
 
 ## Shrink the completion to be smaller than the configured size if there
 ## are no scrollbars.
@@ -1072,7 +1072,7 @@ c.qt.args = ['["ppapi-widevine-path=/usr/lib/qt/plugins/ppapi/libwidevinecdmadap
 ## Enable smooth scrolling for web pages. Note smooth scrolling does not
 ## work with the `:scroll-px` command.
 ## Type: Bool
-# c.scrolling.smooth = False
+c.scrolling.smooth = True
 
 ## When to find text on a page case-insensitively.
 ## Type: String
@@ -1421,7 +1421,7 @@ config.bind('cb','open https://www.bitchute.com/')
 config.bind('cu','open https://unacademy.com/')
 config.bind('ca','open https://iasbaba.com/')
 config.bind('cj','open https://jordanmaxwellresearch.is/')
-config.bind('ch','open https://hangouts.google.com/') 
+config.bind('ch','open https://jeffreymatte.com/') 
 config.bind('cl','open https://www.archlinux.org/')
 config.bind('cg','open https://gitlab.com/Pradeesh112/Dotfiles')
 config.bind('cc','open https://github.com/Pradeesh112/dotfiles')
@@ -1449,7 +1449,7 @@ config.bind('zb','open -t https://www.bitchute.com/')
 config.bind('zu','open -t https://unacademy.com/')
 config.bind('za','open -t https://iasbaba.com/')
 config.bind('zj','open -t https://jordanmaxwellresearch.is/')
-config.bind('zh','open -t https://hangouts.google.com/') 
+config.bind('zh','open -t https://jeffreymatte.com/') 
 config.bind('zl','open -t https://www.archlinux.org/')
 config.bind('zg','open -t https://gitlab.com/Pradeesh112/Dotfiles')
 config.bind('zc','open -t https://github.com/Pradeesh112/dotfiles')
