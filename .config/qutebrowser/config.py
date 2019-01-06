@@ -1413,6 +1413,7 @@ c.url.start_pages = ['http://portal.actcorp.in/web/chn/home']
 ## shortcuts for sites 
 config.bind('yo','open https://www.youtube.com/')
 config.bind('ah','open https://www.zerohedge.com/')
+config.bind('as','open http://www.speedtest.net/')
 config.bind('pm','open https://mail.protonmail.com/login/')
 config.bind('cz','open https://www.cricbuzz.com/')
 config.bind('cr','open https://old.reddit.com/r/linux/')
@@ -1442,6 +1443,8 @@ config.bind('cf','open https://mail.google.com/mail/u/0/#inbox')
 config.bind('cx','open https://mrunal.org/')
 
 ## opens the sites in tab
+config.bind('sa','open -t http://www.speedtest.net/')
+config.bind('sh','open -t https://www.zerohedge.com/')
 config.bind('zz','open -t https://www.cricbuzz.com/')
 config.bind('zr','open -t https://old.reddit.com/r/linux/')
 config.bind('zm','open -t https://medium.com/')
