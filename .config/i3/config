@@ -29,27 +29,6 @@ bindsym $mod+Shift+q kill
 # rofi 
 bindsym $mod+d exec rofi -show drun -theme arthur  
 
-###########################################################################
-
-###########################################################################
-############################Sound Section##################################
-###########################################################################
-
-# Pulse Audio controls
-bindsym $mod+semicolon exec pactl set-sink-volume 0 +5% 
-bindsym $mod+apostrophe exec pactl set-sink-volume 0 -5% 
-bindsym $mod+Shift+apostrophe exec pactl set-sink-mute 0 toggle 
-
-############################################################################
-###########################Screen brightness controls#######################
-############################################################################
-
-# Sreen brightness controls
-bindsym $mod+comma exec light -A 5 
-bindsym $mod+Shift+comma exec light -U 5 
-
-#############################################################################
-
 # Autostart applications
 exec --no-startup-id nitrogen --restore; sleep 1;
 exec --no-startup-id redshift
@@ -83,7 +62,7 @@ for_window [urgent=latest] focus
 # Open applications on specific workspaces
 assign [class="qutebrowser"] $ws1
 for_window [class="^qutebrowser$"] focus
-#assign [class="URxvt"] $ws2
+assign [class="URxvt"] $ws2
 #for_window [class="^URxvt$"] focus
 for_window [class="Spotify"] move to workspace $ws3
 #for_window [class="^Spotify$"] focus
@@ -122,21 +101,6 @@ for_window [class="qutebrowser"] border pixel 3
 for_window [class="Sxiv"] floating enable border pixel 3
 for_window [class="Evince"] border pixel 3
 
-# Scratchpad
-for_window [instance="scratchpad"] move scratchpad, scratchpad show, resize set 800 550, border pixel 3, move position center
-for_window [instance="vid"] move scratchpad, resize set 800 550, border pixel 3, move position center      
-for_window [instance="aud"] move scratchpad, scratchpad show, resize set 600 450, border pixel 3, move position center 
-bindsym $mod+c exec --no-startup-id urxvt -name scratchpad -e cmus
-bindsym $mod+i exec --no-startup-id urxvt -name scratchpad -e nmtui
-bindsym $mod+a exec --no-startup-id urxvt -name scratchpad -e bc
-bindsym $mod+p exec --no-startup-id urxvt -name aud -e ncpamixer
- 
-# Make the currently focused window a scratchpad
-bindsym $mod+period move scratchpad
-
-# Show the first scratchpad window
-bindsym $mod+slash scratchpad show, move position center
-
 # reload the configuration file
 bindsym $mod+Shift+c reload
  
@@ -155,8 +119,8 @@ bindsym $mod+l exec betterlockscreen -l
 
 # change borders
 bindsym $mod+u border none
-bindsym $mod+y border pixel 4
-bindsym $mod+n border normal
+bindsym $mod+y border pixel 3
+#bindsym $mod+n border normal
 
 # change focus
 bindsym $mod+j focus down
@@ -206,7 +170,7 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+q focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+bindsym $mod+n focus child
 
 # Workspace names
 set $ws1 ""
@@ -348,3 +312,44 @@ client.focused #117864 #117864 #e5e5e5 #117864
 client.unfocused #4A4A4A #222222 #aaaaaa #222222
 client.focused_inactive #4A4A4A #222222 #a9a9a9 #222222
 client.urgent #4A4A4A #4A4A4A #f7f7f7 #4A4A4A
+
+###################################
+###########Scratchpads#############
+###################################
+
+# Scratchpad windows
+for_window [instance="scratchpad"] move scratchpad, scratchpad show, resize set 800 550, border pixel 3, move position center
+for_window [instance="vid"] move scratchpad, resize set 800 550, border pixel 3, move position center      
+for_window [instance="aud"] move scratchpad, scratchpad show, resize set 600 450, border pixel 3, move position center 
+
+# Starting Scratchpads
+bindsym $mod+c exec --no-startup-id urxvt -name scratchpad -e cmus
+bindsym $mod+i exec --no-startup-id urxvt -name scratchpad -e nmtui
+bindsym $mod+a exec --no-startup-id urxvt -name scratchpad -e bc
+bindsym $mod+p exec --no-startup-id urxvt -name aud -e ncpamixer
+
+# Make the currently focused window a scratchpad
+bindsym $mod+period move scratchpad
+
+# Show the first scratchpad window
+bindsym $mod+slash scratchpad show, move position center
+
+###################################
+##########Sound Controls###########
+###################################
+
+# Pulse Audio controls
+bindsym $mod+semicolon exec pactl set-sink-volume 0 +5% 
+bindsym $mod+apostrophe exec pactl set-sink-volume 0 -5% 
+bindsym $mod+Shift+apostrophe exec pactl set-sink-mute 0 toggle 
+
+###############################################
+##########Screen Brightness Controls###########
+###############################################
+
+# Sreen brightness controls
+bindsym $mod+comma exec light -A 5 
+bindsym $mod+Shift+comma exec light -U 5 
+
+
+
