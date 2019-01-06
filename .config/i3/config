@@ -350,6 +350,3 @@ bindsym $mod+Shift+apostrophe exec pactl set-sink-mute 0 toggle
 # Sreen brightness controls
 bindsym $mod+comma exec light -A 5 
 bindsym $mod+Shift+comma exec light -U 5 
-
-
-
