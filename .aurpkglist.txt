@@ -12,3 +12,4 @@ stremio-beta
 thunar-extended
 yay
 ncpamixer 
+rofi-pass
