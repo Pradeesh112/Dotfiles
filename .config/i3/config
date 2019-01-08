@@ -26,6 +26,7 @@ bindsym $mod+Shift+q kill
 
 # rofi 
 bindsym $mod+d exec rofi -show drun -theme arthur  
+bindsym $mod+Shift+f exec rofi-pass 
 
 # Autostart applications
 exec --no-startup-id nitrogen --restore; sleep 1;

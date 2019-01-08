@@ -1445,6 +1445,7 @@ config.bind('cx','open https://mrunal.org/')
 ## opens the sites in tab
 config.bind('sa','open -t http://www.speedtest.net/')
 config.bind('sh','open -t https://www.zerohedge.com/')
+config.bind('sd','open -t https://www.youtube.com/')
 config.bind('zz','open -t https://www.cricbuzz.com/')
 config.bind('zr','open -t https://old.reddit.com/r/linux/')
 config.bind('zm','open -t https://medium.com/')
