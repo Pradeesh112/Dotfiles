@@ -3,5 +3,5 @@
 
 config_version: 2
 settings:
-  content.proxy:
-    global: socks://localhost:9050/
+  downloads.location.directory:
+    global: ~/
