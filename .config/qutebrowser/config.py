@@ -445,7 +445,7 @@ c.colors.webpage.bg = 'black'
 ##   - always: Whenever a completion is available.
 ##   - auto: Whenever a completion is requested.
 ##   - never: Never.
-c.completion.show = 'never'
+c.completion.show = 'always'
 
 ## Shrink the completion to be smaller than the configured size if there
 ## are no scrollbars.
@@ -1148,7 +1148,7 @@ c.scrolling.smooth = True
 
 ## Hide the statusbar unless a message is shown.
 ## Type: Bool
-# c.statusbar.hide = True
+#c.statusbar.hide = True
 
 ## Padding (in pixels) for the statusbar.
 ## Type: Padding
@@ -1340,7 +1340,7 @@ c.tabs.show = 'multiple'
 ## Page to open if :open -t/-b/-w is used without URL. Use `about:blank`
 ## for a blank page.
 ## Type: FuzzyUrl
-c.url.default_page = 'https://google.com/'
+c.url.default_page = 'https://google.com'
 
 ## URL segments where `:navigate increment/decrement` will search for a
 ## number.
@@ -1363,6 +1363,7 @@ c.url.default_page = 'https://google.com/'
 ## `:open google qutebrowser`.
 ## Type: Dict
 c.url.searchengines = {
+#        'DEFAULT': 'https://www.startpage.com/search?hl=en&q={}',
         'DEFAULT': 'https://google.com/search?hl=en&q={}',
         'r': 'https://reddit.com/r/{}',
         'gh': 'https://github.com/search?utf8=%E2%9C%93&q={}&type=',
