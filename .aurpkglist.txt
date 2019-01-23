@@ -13,3 +13,4 @@ thunar-extended
 yay
 ncpamixer 
 rofi-pass
+simplenote-electron-bin 

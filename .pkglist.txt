@@ -125,3 +125,4 @@ xorg-xinit
 xorg-xkill
 youtube-dl
 pass
+numlockx
