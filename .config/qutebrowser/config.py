@@ -445,7 +445,7 @@ c.colors.webpage.bg = 'black'
 ##   - always: Whenever a completion is available.
 ##   - auto: Whenever a completion is requested.
 ##   - never: Never.
-c.completion.show = 'always'
+c.completion.show = 'auto'
 
 ## Shrink the completion to be smaller than the configured size if there
 ## are no scrollbars.
@@ -666,7 +666,7 @@ c.content.host_blocking.lists = ['/etc/hosts']
 ## still be downloaded by clicking the download button in the pdf.js
 ## viewer.
 ## Type: Bool
-#c.content.pdfjs = True
+c.content.pdfjs = True
 
 ## Enable plugins in Web pages.
 ## Type: Bool
@@ -1415,6 +1415,7 @@ c.url.start_pages = ['http://portal.actcorp.in/web/chn/home']
 config.bind('yo','open https://www.youtube.com/')
 config.bind('ah','open https://www.zerohedge.com/')
 config.bind('as','open http://www.speedtest.net/')
+config.bind('af','open https://www.youtube.com/channel/UC_ITtTXluRTpVeBhTNxQUMA/about')
 config.bind('pm','open https://mail.protonmail.com/login/')
 config.bind('cz','open https://www.cricbuzz.com/')
 config.bind('cr','open https://old.reddit.com/r/linux/')
@@ -1447,6 +1448,7 @@ config.bind('cx','open https://mrunal.org/')
 config.bind('sa','open -t http://www.speedtest.net/')
 config.bind('sh','open -t https://www.zerohedge.com/')
 config.bind('sd','open -t https://www.youtube.com/')
+config.bind('sf','open -t https://www.youtube.com/channel/UC_ITtTXluRTpVeBhTNxQUMA/about')
 config.bind('zz','open -t https://www.cricbuzz.com/')
 config.bind('zr','open -t https://old.reddit.com/r/linux/')
 config.bind('zm','open -t https://medium.com/')
@@ -1563,8 +1565,8 @@ config.bind('N', 'search-prev')
 config.bind('PP', 'open -t -- {primary}')
 config.bind('Pp', 'open -t -- {clipboard}')
 config.bind('R', 'reload -f')
-config.bind('hh', 'open qute://history/')
-#config.bind('Sq', 'open qute://bookmarks')
+config.bind('ag', 'open qute://history/')
+config.bind('ab', 'open qute://bookmarks')
 #config.bind('Ss', 'open qute://settings')
 config.bind('T', 'tab-focus')
 config.bind('ZQ', 'quit')
@@ -1609,7 +1611,7 @@ config.bind('pP', 'open -- {primary}')
 config.bind('pp', 'open -- {clipboard}')
 #config.bind('q', 'record-macro')
 config.bind('r', 'reload')
-config.bind('sf', 'save')
+#config.bind('sf', 'save')
 config.bind('sk', 'set-cmd-text -s :bind')
 config.bind('sl', 'set-cmd-text -s :set -t')
 config.bind('ss', 'set-cmd-text -s :set')
