@@ -33,8 +33,8 @@ exec --no-startup-id nitrogen --restore; sleep 1;
 exec --no-startup-id redshift
 exec --no-startup-id compton  
 exec --no-startup-id syndaemon -i 1.5 -k -R -t
-exec --no-startup-id qutebrowser
-exec --no-startup-id xautolock -time 25 -locker "betterlockscreen -l"
+#exec --no-startup-id qutebrowser
+exec --no-startup-id xautolock -time 225 -locker "betterlockscreen -l"
 exec --no-startup-id udiskie &
 exec --no-startup-id numlockx on 
 
@@ -47,7 +47,7 @@ bindsym $mod+F5 exec thunar
 bindsym $mod+F6 exec evince
 bindsym $mod+F7 exec bleachbit
 bindsym $mod+F8 exec transmission-gtk
-bindsym $mod+F9 exec stremio-beta
+#bindsym $mod+F9 exec stremio-beta
 bindsym $mod+s exec spotify
 bindsym $mod+t exec urxvt -e 'tmux'
 bindsym $mod+Shift+n exec nitrogen
@@ -77,8 +77,8 @@ assign [class="Bleachbit"] $ws7
 for_window [class="^Bleachbit$"] focus
 assign [class="Transmission-gtk"] $ws8
 for_window [class="^Transmission-gtk$"] focus
-assign [class="Stremio"] $ws9
-for_window [class="^Stremio$"] focus
+#assign [class="Stremio"] $ws9
+#for_window [class="^Stremio$"] focus
  
 # Open specific applications in floating mode
 for_window [title="File Transfer*"] floating enable
