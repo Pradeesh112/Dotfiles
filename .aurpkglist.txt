@@ -1,5 +1,4 @@
 betterlockscreen
-bitwarden-bin
 downgrade
 dtrx
 i3lock-fancy-git
@@ -8,9 +7,7 @@ qt5-webengine-widevine
 ranger-git
 rtv
 spotify
-stremio-beta
 thunar-extended
 yay
 ncpamixer 
 rofi-pass
-simplenote-electron-bin 
