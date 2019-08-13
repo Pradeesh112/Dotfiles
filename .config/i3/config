@@ -25,7 +25,7 @@ bindsym $mod+Return exec urxvt
 bindsym $mod+Shift+q kill
 
 # rofi 
-bindsym $mod+d exec rofi -show drun -theme arthur  
+bindsym $mod+d exec rofi -show drun -theme arthur 
 bindsym $mod+b exec rofi-pass 
 
 # Autostart applications
@@ -34,7 +34,7 @@ exec --no-startup-id redshift
 exec --no-startup-id compton  
 exec --no-startup-id syndaemon -i 1.5 -k -R -t
 #exec --no-startup-id qutebrowser
-exec --no-startup-id xautolock -time 225 -locker "betterlockscreen -l"
+#exec --no-startup-id xautolock -time 15 -locker "betterlockscreen -l"
 exec --no-startup-id udiskie &
 exec --no-startup-id numlockx on 
 
@@ -63,22 +63,22 @@ assign [class="qutebrowser"] $ws1
 for_window [class="^qutebrowser$"] focus
 assign [class="URxvt"] $ws2
 #for_window [class="^URxvt$"] focus
-for_window [class="Spotify"] move to workspace $ws3
+for_window [class="Spotify"] move to workspace $ws6
 #for_window [class="^Spotify$"] focus
-assign [class="Sxiv"] $ws4
+assign [class="Sxiv"] $ws9
 for_window [class="Sxiv"] focus
 assign [class="mpv"] $ws4
 for_window [class="mpv"] focus
 assign [class="Thunar"] $ws5
 for_window [class="^Thunar$"] focus
-assign [class="Evince"] $ws6
+assign [class="Evince"] $ws3
 for_window [class="^Evince$"] focus
-assign [class="Bleachbit"] $ws7
+assign [class="Bleachbit"] $ws8
 for_window [class="^Bleachbit$"] focus
-assign [class="Transmission-gtk"] $ws8
+assign [class="Transmission-gtk"] $ws7
 for_window [class="^Transmission-gtk$"] focus
-#assign [class="Stremio"] $ws9
-#for_window [class="^Stremio$"] focus
+assign [class="Sxiv"] $ws9
+for_window [class="^Sxiv$"] focus
  
 # Open specific applications in floating mode
 for_window [title="File Transfer*"] floating enable
@@ -171,13 +171,13 @@ bindsym $mod+n focus child
 # Workspace names
 set $ws1 ""
 set $ws2 ""
-set $ws3 ""
-set $ws4 "" 
+set $ws3 ""
+set $ws4 "" 
 set $ws5 ""
-set $ws6 ""
-set $ws7 ""
-set $ws8 ""
-set $ws9 ""
+set $ws6 ""
+set $ws7 ""
+set $ws8 ""
+set $ws9 ""
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
