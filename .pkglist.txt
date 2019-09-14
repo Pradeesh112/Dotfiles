@@ -1,145 +1,582 @@
-adapta-gtk-theme
-autoconf
-automake
-bash
-betterlockscreen
-binutils
-bison
-bleachbit
-bzip2
-cmus
-compton
-coreutils
-cryptsetup
-device-mapper
-dhcpcd
-dialog
-diffutils
-downgrade
-dtrx
-e2fsprogs
-evince
-fakeroot
-feh
-ffmpegthumbnailer
-file
-filesystem
-findutils
-flex
-fzf
-gawk
-gcc
-gcc-libs
-gettext
-git
-glibc
-grep
-grub
-gvfs
-gvfs-gphoto2
-gvfs-mtp
-gzip
-htop
-i3-gaps
-i3lock-fancy-git
-i3status
-inetutils
-iproute2
-iputils
-iw
-jfsutils
-less
-libao
-libmtp
-libtool
-licenses
-light-git
-linux-lts
-linux-lts-headers
-logrotate
-lvm2
-lxappearance
-m4
-make
-man-db
-man-pages
-mdadm
-mlocate
-mpv
-mtpfs
-nano
-ncpamixer
-netctl
-network-manager-applet
-networkmanager
-nitrogen
-noto-fonts
-numlockx
-openssh
-openvpn
-p7zip
-pacman
-papirus-icon-theme
-patch
-pciutils
-pdfjs
-perl
-pkgconf
-powertop
-procps-ng
-psmisc
-pulseaudio
-pulseaudio-alsa
-qt5-webengine-widevine
-qt5ct
-qutebrowser
-ranger-git
-redshift
-reiserfsprogs
-rofi
-rofi-pass
-rtv
-rxvt-unicode
-s-nail
-screenfetch
-scrot
-sed
-shadow
-shotcut
-spotify
-sudo
-sxiv
-sysfsutils
-systemd-sysvcompat
-tar
-texinfo
-thunar-extended
-tlp
-tmux
-transmission-gtk
-tumbler
-udiskie
-ufw
-unrar
-unzip
-usbutils
-util-linux
-vim
-w3m
-wget
-which
-windscribe-cli
-wireless_tools
-wpa_actiond
-wpa_supplicant
-xautolock
-xf86-input-libinput
-xf86-input-synaptics
-xf86-video-amdgpu
-xfsprogs
-xorg-server
-xorg-xinit
-xorg-xkill
-yay
-you-get
-youtube-dl
+acl 2.2.53-1
+adapta-gtk-theme 3.94.0.92-1
+adobe-source-code-pro-fonts 2.030ro+1.050it-5
+adwaita-icon-theme 3.34.0-1
+alsa-lib 1.1.9-2
+alsa-plugins 1.1.9-2
+aom 1.0.0.errata1-1
+archlinux-keyring 20190827-1
+argon2 20190702-1
+aspell 0.60.7-1
+at-spi2-atk 2.34.0-1
+at-spi2-core 2.34.0-1
+atk 2.34.1-1
+atkmm 2.28.0-1
+attr 2.4.48-1
+audit 2.8.5-3
+autoconf 2.69-5
+automake 1.16.1-1
+avahi 0.7+18+g1b5f401-2
+bash 5.0.009-1
+bc 1.07.1-3
+binutils 2.32-2
+bison 3.4-1
+bleachbit 2.2-2
+bluez-libs 5.50-7
+brotli 1.0.7-1
+btrfs-progs 5.2.1-1
+bubblewrap 0.3.3-3
+bzip2 1.0.8-2
+ca-certificates 20181109-1
+ca-certificates-mozilla 3.46-1
+ca-certificates-utils 20181109-1
+cairo 1.17.2+17+g52a7c79fd-1
+cairomm 1.12.2-3
+cantarell-fonts 1:0.111-1
+cdparanoia 10.2-7
+chromium 77.0.3865.75-1
+cifs-utils 6.8-2
+cmus 2.8.0-3
+colord 1.4.4-2
+compton 7.3-1
+confuse 3.2.2-1
+coreutils 8.31-1
+cracklib 2.9.7-1
+cryptsetup 2.2.1-1
+curl 7.66.0-1
+dav1d 0.4.0-1
+db 5.3.28-4
+dbus 1.12.16-2
+dbus-glib 0.110-1
+dconf 0.34.0-1
+desktop-file-utils 0.24-1
+device-mapper 2.02.186-2
+dhcpcd 7.2.2-1
+dialog 1:1.3_20190808-1
+diffutils 3.7-1
+djvulibre 3.5.27-4
+dmraid 1.0.0.rc16.3-11
+dnssec-anchors 20190629-1
+dosfstools 4.1-2
+double-conversion 3.1.5-1
+e2fsprogs 1.45.3-1
+enchant 2.2.6-1
+evince 3.32.0+26+gd3aecce7-2
+exo 0.12.8-1
+expat 2.2.7-1
+fakeroot 1.24-1
+feh 3.2.1-1
+ffmpeg 1:4.2.1-1
+ffmpegthumbnailer 2.2.0-2
+fftw 3.3.8-1
+file 5.37-2
+filesystem 2019.05-2
+findutils 4.7.0-1
+flac 1.3.3-1
+flex 2.6.4-2
+fontconfig 2:2.13.1+12+g5f5ec56-1
+freetype2 2.10.1-1
+fribidi 1.0.5-1
+fuse-common 3.6.2-1
+fuse2 2.9.9-1
+fuse3 3.6.2-1
+fzf 0.18.0-2
+gawk 4.2.1-2
+gc 7.6.8-1
+gcc 9.1.0-2
+gcc-libs 9.1.0-2
+gconf 3.2.6+11+g07808097-4
+gcr 3.33.4+6+g35df18d-1
+gd 2.2.5-2
+gdbm 1.18.1-2
+gdk-pixbuf2 2.38.2-1
+geoclue 2.5.3-2
+geocode-glib 3.26.1-1
+gettext 0.20.1-2
+ghostscript 9.27-2
+giblib 1.2.4-7
+giflib 5.2.1-1
+git 2.23.0-1
+glib-networking 2.62.0-1
+glib2 2.62.0-1
+glibc 2.29-4
+glibmm 2.60.0-1
+glslang 7.12.3352-1
+gmp 6.1.2-2
+gnome-desktop 1:3.32.2-1
+gnome-screenshot 3.32.0-1
+gnupg 2.2.17-2
+gnutls 3.6.9-1
+gobject-introspection-runtime 1.62.0-1
+gpgme 1.13.1-1
+gpm 1.20.7.r27.g1fd1941-1
+gptfdisk 1.0.4-1
+graphene 1.10.0-1
+graphite 1:1.3.13-2
+grep 3.3-1
+groff 1.22.4-1
+grub 2:2.04-2
+gsettings-desktop-schemas 3.34.0-1
+gsfonts 20180524-2
+gsm 1.0.18-1
+gspell 1.8.2-1
+gst-plugins-base 1.16.0-3
+gst-plugins-base-libs 1.16.0-3
+gstreamer 1.16.0-2
+gtk-update-icon-cache 1:3.24.11-1
+gtk2 2.24.32-1
+gtk3 1:3.24.11-1
+gtkmm 1:2.24.5-3
+guile 2.2.6-1
+gvfs 1.42.0-1
+gvfs-gphoto2 1.42.0-1
+gvfs-mtp 1.42.0-1
+gzip 1.10-1
+harfbuzz 2.6.1-1
+hdparm 9.58-1
+hicolor-icon-theme 0.17-1
+hspell 1.4-2
+htop 2.2.0-2
+hunspell 1.7.0-2
+hwids 20190818-1
+i3-gaps 4.17.1-1
+i3lock-color 2.12.c-1
+i3status 2.13-2
+iana-etc 20190823-1
+icu 64.2-1
+ijs 0.35-2
+imagemagick 7.0.8.64-1
+imlib2 1.5.1-1
+inetutils 1.9.4-7
+iproute2 5.2.0-1
+iptables 1:1.8.3-1
+iputils 20180629.f6aac8d-4
+iso-codes 4.3-1
+iw 5.3-1
+jack 0.125.0-7
+jansson 2.12-1
+jasper 2.0.16-1
+jbig2dec 0.16-1
+jfsutils 1.1.15-6
+js60 60.9.0-1
+json-c 0.13.1-2
+json-glib 1.4.4-1
+kbd 2.2.0-3
+keyutils 1.6.1-1
+kmod 26-2
+krb5 1.17-1
+l-smash 2.14.5-1
+lame 3.100-2
+lcms2 2.9-2
+ldb 1:1.5.5-1
+ldns 1.7.1-1
+less 551-1
+libaio 0.3.112-1
+libao 1.2.2-2
+libarchive 3.4.0-2
+libass 0.14.0-1
+libassuan 2.5.3-1
+libasyncns 0.8+3+g68cd5af-2
+libatasmart 0.19-4
+libatomic_ops 7.6.10-1
+libavc1394 0.5.4-3
+libblockdev 2.22-1
+libbluray 1.1.2-1
+libbsd 0.9.1-1
+libbytesize 2.1-1
+libcaca 0.99.beta19-2
+libcanberra 0.30+2+gc0620e4-2
+libcap 2.27-1
+libcap-ng 0.7.9-1
+libcddb 1.3.2-5
+libcdio 2.1.0-1
+libcdio-paranoia 10.2+2.0.0-2
+libconfig 1.7.2-1
+libcroco 0.6.13-1
+libcups 2.3.0-3
+libcurl-gnutls 7.66.0-1
+libdaemon 0.14-4
+libdatrie 0.2.12-1
+libdiscid 0.6.2-2
+libdmx 1.1.4-1
+libdrm 2.4.99-1
+libdvdnav 6.0.0-1
+libdvdread 6.0.1-1
+libedit 20190324_3.1-1
+libelf 0.176-1
+libepoxy 1.5.3-1
+libev 4.27-1
+libevdev 1.8.0-1
+libevent 2.1.11-2
+libexif 0.6.21-3
+libffi 3.2.1-3
+libfontenc 1.1.4-1
+libgcrypt 1.8.5-1
+libglade 2.6.4-6
+libglvnd 1.1.1-1
+libgpg-error 1.36-1
+libgphoto2 2.5.23-1
+libgudev 233-1
+libgusb 0.3.0-1
+libgxps 0.3.1-1
+libibus 1.5.21-1
+libice 1.0.10-1
+libid3tag 0.15.1b-9
+libidn 1.35-1
+libidn2 2.2.0-1
+libiec61883 1.2.0-5
+libinput 1.14.1-1
+libjpeg-turbo 2.0.3-1
+libksba 1.3.5-1
+libldap 2.4.48-1
+liblqr 0.4.2-2
+libmad 0.15.1b-8
+libmm-glib 1.10.6-1
+libmnl 1.0.4-2
+libmodplug 0.8.9.0-2
+libmpc 1.1.0-1
+libmtp 1.1.16-1
+libndp 1.7-1
+libnetfilter_conntrack 1.0.7-1
+libnewt 0.52.21-1
+libnfnetlink 1.0.1-3
+libnftnl 1.1.4-1
+libnghttp2 1.39.2-1
+libnl 3.4.0-1
+libnm 1.20.2-1
+libnma 1.8.22-1
+libnotify 0.7.8-1
+libnsl 1.2.0-1
+libogg 1.3.4-1
+libomxil-bellagio 0.9.3-2
+libpaper 1.1.24-11
+libpcap 1.9.0-1
+libpciaccess 0.16-1
+libpgm 5.2.122-3
+libpipeline 1.5.1-1
+libplacebo 1.18.0-2
+libpng 1.6.37-1
+libproxy 0.4.15-10
+libpsl 0.21.0-1
+libpulse 12.99.3-1
+libraqm 0.7.0-1
+libraw1394 2.1.2-2
+librsvg 2:2.46.0-1
+libsamplerate 0.1.9-2
+libsasl 2.1.27-1
+libseccomp 2.4.1-2
+libsecret 0.19.1-1
+libsigc++ 2.10.2-1
+libsm 1.2.3-1
+libsndfile 1.0.28-2
+libsodium 1.0.18-1
+libsoup 2.68.1-1
+libsoxr 0.1.3-1
+libspectre 0.2.8-2
+libssh 0.9.0-1
+libssh2 1.8.2-1
+libsynctex 2019.51075-3
+libtasn1 4.14-1
+libteam 1.29-1
+libthai 0.1.28-1
+libtheora 1.1.1-4
+libtiff 4.0.10-1
+libtirpc 1.1.4-1
+libtool 2.4.6+42+gb88cebd5-5
+libunistring 0.9.10-1
+libunwind 1.3.1-1
+libusb 1.0.22-1
+libutil-linux 2.34-3
+libva 2.5.0-1
+libvdpau 1.3-1
+libvisual 0.4.0-7
+libvoikko 4.2-1
+libvorbis 1.3.6-1
+libvpx 1.8.1-1
+libwacom 1.0-1
+libwbclient 4.10.8-1
+libwebp 1.0.3-1
+libx11 1.6.8-1
+libxau 1.0.9-1
+libxaw 1.0.13-2
+libxcb 1.13.1-1
+libxcomposite 0.4.5-1
+libxcursor 1.2.0-1
+libxdamage 1.1.5-1
+libxdg-basedir 1.2.0-4
+libxdmcp 1.1.3-1
+libxext 1.3.4-1
+libxfce4ui 4.14.1-2
+libxfce4util 4.14.0-1
+libxfixes 5.0.3-2
+libxfont2 2.0.3-1
+libxft 2.3.3-1
+libxi 1.7.10-1
+libxinerama 1.1.4-1
+libxkbcommon 0.8.4-1
+libxkbcommon-x11 0.8.4-1
+libxkbfile 1.1.0-1
+libxml2 2.9.9-2
+libxmu 1.1.3-1
+libxpm 3.5.12-2
+libxrandr 1.5.2-1
+libxrender 0.9.10-2
+libxshmfence 1.3-1
+libxslt 1.1.33-1
+libxss 1.2.3-1
+libxt 1.2.0-1
+libxtst 1.2.3-2
+libxv 1.0.11-2
+libxxf86dga 1.1.5-1
+libxxf86vm 1.1.4-2
+libyaml 0.2.2-1
+licenses 20181104-1
+linux-api-headers 5.1-1
+linux-firmware 20190815.07b925b-1
+linux-lts 4.19.34-1
+linux-lts-headers 4.19.34-1
+llvm-libs 8.0.1-3
+lm_sensors 3.5.0-1
+lmdb 0.9.24-1
+logrotate 3.15.1-1
+lua52 5.2.4-4
+lvm2 2.02.186-2
+lxappearance 0.6.3-2
+lz4 1:1.9.1-1
+lzo 2.10-2
+m4 1.4.18-2
+make 4.2.1-3
+man-db 2.8.7-1
+man-pages 5.02-1
+mdadm 4.1-1
+mesa 19.1.6-2
+minizip 1:1.2.11-3
+mkinitcpio 25-2
+mkinitcpio-busybox 1.30.1-1
+mlocate 0.26.git.20170220-1
+mobile-broadband-provider-info 20190116-1
+mpfr 4.0.2-1
+mpv 1:0.29.1-8
+mtdev 1.1.5-2
+mtpfs 1.1-3
+nano 4.4-1
+ncurses 6.1-6
+ndctl 66-1
+netctl 1.20-1
+nettle 3.5.1-1
+network-manager-applet 1.8.22-1
+networkmanager 1.20.2-1
+nitrogen 1.6.1-2
+nm-connection-editor 1.8.22-1
+noto-fonts 20190111-2
+npth 1.6-1
+nspr 4.22-1
+nss 3.46-1
+numlockx 1.2-4
+opencore-amr 0.1.5-2
+openjpeg2 2.3.1-1
+openresolv 3.9.1-1
+openssh 8.0p1-2
+openssl 1.1.1.d-1
+openssl-1.0 1.0.2.s-1
+openvpn 2.4.7-1
+opus 1.3.1-1
+orc 0.4.30-1
+p11-kit 0.23.17-2
+p7zip 16.02-5
+pacman 5.1.3-1
+pacman-contrib 1.1.0-1
+pacman-mirrorlist 20190821-1
+pam 1.3.1-1
+pambase 20190105.1-1
+pango 1:1.44.6-1
+pangomm 2.42.0-1
+papirus-icon-theme 20181007-1
+parted 3.2-9
+pass 1.7.3-1
+patch 2.7.6-7
+pciutils 3.6.2-1
+pcre 8.43-1
+pcre2 10.33-1
+pdfjs 2.2.228-1
+perl 5.30.0-3
+perl-error 0.17028-1
+perl-mailtools 2.21-2
+perl-timedate 2.30-6
+perl-uri 1.76-2
+pinentry 1.1.0-4
+pipewire 0.2.6+1+g37613b67-1
+pixman 0.38.4-1
+pkcs11-helper 1.25.1-1
+pkgconf 1.6.3-2
+polkit 0.116-2
+poppler 0.80.0-1
+poppler-glib 0.80.0-1
+popt 1.16-10
+powertop 2.10-1
+procps-ng 3.3.15-1
+psmisc 23.2-1
+pulseaudio 12.99.3-1
+pulseaudio-alsa 2-5
+pwgen 2.08-1
+pygobject-devel 3.34.0-1
+pygobject2-devel 2.28.7-2
+pygtk 2.24.0-8
+pyqt5-common 5.13.0-1
+pyqtwebengine-common 5.13.0-1
+python 3.7.4-1
+python-appdirs 1.4.3-2
+python-attrs 19.1.0-1
+python-beautifulsoup4 4.8.0-1
+python-chardet 3.0.4-2
+python-decorator 4.4.0-1
+python-docopt 0.6.2-5
+python-gobject 3.34.0-1
+python-idna 2.8-1
+python-jinja 2.10.1-1
+python-keyutils 0.5-3
+python-kitchen 1.2.6-1
+python-markupsafe 1.1.1-1
+python-packaging 19.1-2
+python-pygments 2.4.2-1
+python-pyparsing 2.4.2-1
+python-pypeg2 2.15.2-3
+python-pyqt5 5.13.0-1
+python-pyqtwebengine 5.13.0-1
+python-requests 2.22.0-1
+python-setuptools 1:41.2.0-1
+python-sip-pyqt5 4.19.18-1
+python-six 1.12.0-1
+python-soupsieve 1.9.3-1
+python-urllib3 1.25.3-1
+python-yaml 5.1.2-1
+python2 2.7.16-1
+python2-cairo 1.18.1-1
+python2-gobject2 2.28.7-2
+qt5-base 5.13.1-2
+qt5-declarative 5.13.1-1
+qt5-location 5.13.1-1
+qt5-svg 5.13.1-1
+qt5-webchannel 5.13.1-1
+qt5-webengine 5.13.1-2
+qt5-xmlpatterns 5.13.1-1
+qt5ct 0.37-1
+qutebrowser 1.7.0-1
+re2 20190901-1
+readline 8.0.0-1
+redshift 1.12-2
+reiserfsprogs 3.6.27-2
+rest 0.8.1-1
+rofi 1.5.1-1
+rofi-pass 2.0.2-1
+rtkit 0.12-1
+rtmpdump 1:2.4.r96.fa8646d-5
+rtv 1.27.0-1
+rubberband 1.8.2-2
+run-parts 4.8.6.1-1
+rxvt-unicode 9.22-9
+rxvt-unicode-terminfo 9.22-9
+s-nail 14.9.15-1
+sbc 1.4-1
+screenfetch 3.8.0-3
+scrot 1.2-1
+sdl2 2.0.10-1
+sed 4.7-1
+shaderc 2019.0-2
+shadow 4.7-2
+shared-mime-info 1.12-1
+slang 2.3.2-1
+smbclient 4.10.8-1
+snappy 1.1.7-1
+sound-theme-freedesktop 0.8-3
+speex 1.2.0-2
+speexdsp 1.2.0-1
+spirv-tools 2019.3-2
+sqlite 3.29.0-1
+startup-notification 0.12-6
+sudo 1.8.27-1
+sxiv 25-1
+sysfsutils 2.1.0-10
+systemd 243.0-1
+systemd-libs 243.0-1
+systemd-sysvcompat 243.0-1
+t1lib 5.1.2-7
+talloc 2.2.0-1
+tar 1.32-1
+tdb 1.3.18-2
+tevent 1:0.9.39-2
+texinfo 6.6-1
+thin-provisioning-tools 0.8.5-2
+tlp 1.2.2-1
+transmission-gtk 2.94-2
+tree 1.8.0-1
+tslib 1.20-1
+tumbler 0.2.7-1
+tzdata 2019c-1
+uchardet 0.0.6-2
+udiskie 1.7.7-1
+udisks2 2.8.4-1
+ufw 0.36-1
+unrar 1:5.8.1-1
+unzip 6.0-13
+usbutils 012-1
+util-linux 2.34-3
+v4l-utils 1.16.7-1
+vamp-plugin-sdk 2.8.0-1
+vid.stab 1.1-2
+vim 8.1.1968-1
+vim-runtime 8.1.1968-1
+volume_key 0.3.11-2
+vulkan-icd-loader 1.1.121-1
+w3m 0.5.3.git20190105-1
+wayland 1.17.0-1
+wayland-protocols 1.18-1
+webrtc-audio-processing 0.3.1-1
+wget 1.20.3-2
+which 2.21-3
+wireless_tools 30.pre9-2
+wpa_supplicant 2:2.9-1
+x264 2:157.r72db4377-1
+x265 3.1.2-1
+xautolock 2.2-5
+xcb-proto 1.13-2
+xcb-util 0.4.0-2
+xcb-util-cursor 0.1.3-2
+xcb-util-image 0.4.0-2
+xcb-util-keysyms 0.4.0-2
+xcb-util-renderutil 0.3.9-2
+xcb-util-wm 0.4.1-2
+xcb-util-xrm 1.3-1
+xclip 0.13-2
+xdg-utils 1.1.3+18+g0547886-1
+xdotool 3.20160805.1-2
+xf86-input-libinput 0.29.0-1
+xf86-input-synaptics 1.9.1-1
+xf86-video-amdgpu 19.0.1-1
+xfconf 4.14.1-1
+xfsprogs 4.20.0-2
+xkeyboard-config 2.27-1
+xorg-server 1.20.5-2
+xorg-server-common 1.20.5-2
+xorg-setxkbmap 1.3.2-1
+xorg-xauth 1.1-1
+xorg-xdpyinfo 1.3.2-2
+xorg-xinit 1.4.1-1
+xorg-xkbcomp 1.4.2-1
+xorg-xkill 1.0.5-1
+xorg-xmodmap 1.0.10-1
+xorg-xprop 1.2.4-1
+xorg-xrandr 1.5.1-1
+xorg-xrdb 1.2.0-1
+xorg-xset 1.2.4-1
+xorgproto 2019.1-1
+xvidcore 1.3.5-1
+xz 5.2.4-1
+yajl 2.1.0-2
+you-get 0.4.1347-1
+youtube-dl 2019.09.12.1-1
+zeromq 4.3.2-1
+zita-alsa-pcmi 0.3.2-1
+zita-resampler 1.6.2-1
+zlib 1:1.2.11-3
+zstd 1.4.2-1
