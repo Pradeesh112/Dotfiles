@@ -1045,7 +1045,7 @@ c.keyhint.delay = 1
 ## https://peter.sh/experiments/chromium-command-line-switches/ for a
 ## list) will work.
 ## Type: List of String
-c.qt.args = ['["ppapi-widevine-path=/usr/lib/qt/plugins/ppapi/libwidevinecdmadapter.so"]']
+c.qt.args = ['["ppapi-widevine-path=/usr/lib64/qt5/plugins/ppapi/libwidevinecdmadapter.so"]']
 
 ## Force a Qt platform to use. This sets the `QT_QPA_PLATFORM`
 ## environment variable and is useful to force using the XCB plugin when
@@ -1412,7 +1412,7 @@ c.url.start_pages = ['http://portal.actcorp.in/web/chn/home']
 # c.zoom.text_only = False
 
 ## shortcuts for sites 
-config.bind('yo','open https://www.youtube.com/')
+config.bind('yo','open https://drive.google.com/drive/my-drive')
 config.bind('ah','open https://www.zerohedge.com/')
 config.bind('as','open http://www.speedtest.net/')
 config.bind('af','open https://www.youtube.com/channel/UC_ITtTXluRTpVeBhTNxQUMA/about')
@@ -1425,31 +1425,31 @@ config.bind('cb','open https://www.bitchute.com/')
 config.bind('cu','open https://unacademy.com/')
 config.bind('ca','open https://iasbaba.com/')
 config.bind('cj','open https://jordanmaxwellresearch.is/')
-config.bind('ch','open https://jeffreymatte.com/') 
+config.bind('ch','open https://www.youtube.com/playlist?list=PLVOgwA_DiGzoqQsGjmamTu6f453RWpm_I') 
 config.bind('cl','open https://www.archlinux.org/')
 config.bind('cg','open https://gitlab.com/Pradeesh112/Dotfiles')
-config.bind('cc','open https://github.com/Pradeesh112/dotfiles')
-config.bind('cd','open http://dotshare.it/')
-config.bind('cs','open https://app.simplenote.com/signin?new=true')
+config.bind('cc','open https://github.com/Pradeesh112')
+config.bind('cd','open http://www.visionias.in/#resources')
+config.bind('cs','open https://app.simplenote.com/new')
 config.bind('cw','open https://vault.bitwarden.com/#/')
 config.bind('ce','open https://selfcare.actcorp.in/web/chn/home')
 config.bind('ci','open https://www.indianbank.net.in/jsp/startIB.jsp')
 config.bind('co','open https://www.iobnet.co.in/ibanking/login.do')
 config.bind('ck','open https://www.skytorrents.lol/')
-config.bind('ct','open https://www.torlock.com/')
-config.bind('cp','open https://pirateproxy.gdn/recent')
-config.bind('cv','open http://www.insightsonindia.com/')
+config.bind('ct','open https://freeupscmaterials.org/prelims-2020-test-series/')
+config.bind('cp','open https://pirateproxy.gdn/')
+config.bind('cv','open https://www.insightsonindia.com/insights-ias-mains-answer-writing-new-secure-2019/')
 config.bind('cy','open https://paytm.com/')
 config.bind('cq','open https://mypustak.com/proud-donors')
 config.bind('cn','open http://www.upsc.gov.in/')
 config.bind('cf','open https://mail.google.com/mail/u/0/#inbox')
-config.bind('cx','open https://mrunal.org/')
+config.bind('cx','open https://www.evernote.com/Login.action')
 
 ## opens the sites in tab
 config.bind('sa','open -t http://www.speedtest.net/')
 config.bind('sh','open -t https://www.zerohedge.com/')
-config.bind('sd','open -t https://www.youtube.com/')
-config.bind('sf','open -t https://www.youtube.com/channel/UC_ITtTXluRTpVeBhTNxQUMA/about')
+config.bind('sf','open -t https://drive.google.com/drive/my-drive')
+config.bind('sd','open -t https://www.youtube.com/channel/UC_ITtTXluRTpVeBhTNxQUMA/about')
 config.bind('sx','open -t https://www.bookchor.com/')
 config.bind('zz','open -t https://www.cricbuzz.com/')
 config.bind('zr','open -t https://old.reddit.com/r/linux/')
@@ -1458,29 +1458,28 @@ config.bind('zb','open -t https://www.bitchute.com/')
 config.bind('zu','open -t https://unacademy.com/')
 config.bind('za','open -t https://iasbaba.com/')
 config.bind('zj','open -t https://jordanmaxwellresearch.is/')
-config.bind('zh','open -t https://jeffreymatte.com/') 
+config.bind('zh','open -t https://www.youtube.com/playlist?list=PLVOgwA_DiGzoqQsGjmamTu6f453RWpm_I') 
 config.bind('zl','open -t https://www.archlinux.org/')
 config.bind('zg','open -t https://gitlab.com/Pradeesh112/Dotfiles')
-config.bind('zc','open -t https://github.com/Pradeesh112/dotfiles')
-config.bind('zd','open -t http://dotshare.it/')
-config.bind('zs','open -t https://app.simplenote.com/signin?new=true')
+config.bind('zc','open -t https://github.com/Pradeesh112')
+config.bind('zd','open -t http://www.visionias.in/#resources')
+config.bind('zs','open -t https://app.simplenote.com/new')
 config.bind('zw','open -t https://vault.bitwarden.com/#/')
 config.bind('ze','open -t https://selfcare.actcorp.in/web/chn/home')
 config.bind('zi','open -t https://www.indianbank.net.in/jsp/startIB.jsp')
 config.bind('zo','open -t https://www.iobnet.co.in/ibanking/login.do')
 config.bind('zk','open -t https://www.skytorrents.lol/')
-config.bind('zt','open -t https://www.torlock.com/')
-config.bind('zp','open -t https://pirateproxy.gdn/recent')
-config.bind('zv','open -t http://www.insightsonindia.com/')
+config.bind('zt','open -t https://freeupscmaterials.org/prelims-2020-test-series/')
+config.bind('zp','open -t https://pirateproxy.gdn/')
+config.bind('zv','open -t https://www.insightsonindia.com/insights-ias-mains-answer-writing-new-secure-2019/')
 config.bind('zy','open -t https://paytm.com/')
 config.bind('zq','open -t https://mypustak.com/proud-donors')
-config.bind('zt','open -t https://www.secondhandbooksindia.com/product.php')
 config.bind('zn','open -t http://www.upsc.gov.in/')
 config.bind('zf','open -t https://mail.google.com/mail/u/0/#inbox')
-config.bind('zx','open -t https://mrunal.org/')
+config.bind('zx','open -t https://www.evernote.com/Login.action')
 
 ## opens multzple sites
-config.bind('n','open https://www.youtube.com/;;open -t https://mail.protonmail.com/login;;open -t https://www.reddit.com/r/linux/')
+config.bind('n','open https://www.youtube.com/channel/UC_ITtTXluRTpVeBhTNxQUMA/abou/;;open -t https://mail.protonmail.com/login;;open -t https://mail.google.com/mail/u/0/#inbox')
 
 ## watch videos via mpv
 config.bind('<Ctrl-Shift-m>', 'hint links spawn --detach mpv --force-window yes {hint-url}')
