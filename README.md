@@ -1,1 +1,1 @@
-![2019-05-18-1558178265](https://user-images.githubusercontent.com/33805349/57968837-7ada7e80-798d-11e9-9e37-a240aa6a9b59.jpg)
+![Screenshot from 2019-09-15 22-11-00](https://user-images.githubusercontent.com/33805349/64924789-ec282200-d805-11e9-9b7a-db2d1f0295df.png)
