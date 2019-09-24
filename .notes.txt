@@ -36,8 +36,8 @@ sudo wipefs --all /dev/sdX
 
 ###################################################################################################
 #
-######################################Arch Linux Install###########################################
-#
+####################################Arch Linux Install#############################################
+###############Part 1###############
 #1.Partitioing Hard Disk 
 fdisk /dev/sda
 o                  (nukes the drive)
@@ -75,5 +75,31 @@ uncomment en_US.UTF-8 UTF-8
 locale-gen
 #
 #8.Choosing Time Zone
+ln -sf /usr/share/zoneinfo/Asia/Calcutta /etc/localtime
+#
+#9.Sync the clock
+hwclock --systohc --utc
+#
+#10.Create root password
+passwd (choose u r password)
+#
+#11.Install Grub
+grub-install --target=i386-pc --recheck /dev/sda
+
+cp /usr/share/locale/en\@quot/LC_MESSAGES/grub.mo /boot/grub/locale/en.mo
+
+#
+#12.Configure grub file
+grub-mkconfig -o /boot/grub/grub.cfg
+#
+#13.Exit chroot
+exit (back to live medium)
+#
+#Unmount
+umount /mnt/home
+umount /mnt
+#14.Reboot
+reboot
+###########End of part 1###############
 
  
