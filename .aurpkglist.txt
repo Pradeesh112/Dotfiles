@@ -1,13 +1,12 @@
-betterlockscreen 2.0-1
-chromium-widevine 1:4.10.1440.18-2
-downgrade 6.0.0-2
-dtrx 7.1-3
-gamin 0.1.10-9
-i3lock-fancy-git r146.a12ce23-1
-light-git 1.1.2.r47.ga44ad60-1
-ncpamixer 1.2-3
-ranger-git 1.9.1.150.ge202207d-1
-spotify 1:1.0.98.78-2
-thunar-extended 1.6.16-1
-wpa_actiond 1.4-3
-yay 8.922-1
+betterlockscreen
+chromium-widevine
+downgrade
+dtrx
+i3lock-fancy-git
+light-git
+ncpamixer
+ranger-git
+spotify
+thunar-extended
+wpa_actiond
+yay
