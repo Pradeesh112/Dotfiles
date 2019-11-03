@@ -2,5 +2,4 @@
 ![Screenshot from 2019-11-03 13-14-11](https://user-images.githubusercontent.com/33805349/68081970-838c1780-fe3c-11e9-9107-852100cffad7.png)
 ![Screenshot from 2019-11-03 13-14-53](https://user-images.githubusercontent.com/33805349/68081975-8c7ce900-fe3c-11e9-8c01-9c9c9427f44e.png)
 ![Screenshot from 2019-11-03 13-16-43](https://user-images.githubusercontent.com/33805349/68081979-930b6080-fe3c-11e9-940b-5e78d9a910ee.png)
-![Screenshot from 2019-11-03 13-13-29](https://user-images.githubusercontent.com/33805349/68081981-969ee780-fe3c-11e9-886d-72e4cde73ffd.png)
-
+![Screenshot from 2019-11-03 13-23-29](https://user-images.githubusercontent.com/33805349/68082015-30669480-fe3d-11e9-91be-0a49805b5d81.png)
