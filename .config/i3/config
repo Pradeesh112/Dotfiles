@@ -33,14 +33,15 @@ exec --no-startup-id nitrogen --restore; sleep 1;
 exec --no-startup-id redshift
 exec --no-startup-id compton  
 exec --no-startup-id syndaemon -i 1.5 -k -R -t
-exec --no-startup-id qutebrowser
-exec --no-startup-id xautolock -time 20 -locker "betterlockscreen -l"
+#exec --no-startup-id qutebrowser
+exec --no-startup-id xautolock -time 2000000 -locker "betterlockscreen -l"
 exec --no-startup-id udiskie &
 exec --no-startup-id numlockx on 
 
 # Start Applications
 bindsym $mod+F1 exec qutebrowser
-bindsym $mod+F2 exec urxvt -e 'ranger'
+#bindsym $mod+F2 exec urxvt -e 'ranger'
+bindsym $mod+F2 exec pulseaudio-equalizer-gtk
 bindsym $mod+F3 exec evince
 #bindsym $mod+F3 exec urxvt -e 'cmus'
 bindsym $mod+F4 exec urxvt -e 'rtv'
