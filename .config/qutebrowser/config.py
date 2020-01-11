@@ -740,7 +740,7 @@ c.downloads.location.prompt = False
 ##   - path: Show only the download path.
 ##   - filename: Show only download filename.
 ##   - both: Show download path and filename.
-# c.downloads.location.suggestion = 'path'
+c.downloads.location.suggestion = 'filename'
 
 ## Default program used to open downloads. If null, the default internal
 ## handler is used. Any `{}` in the string will be expanded to the
@@ -811,8 +811,9 @@ c.downloads.remove_finished =10000
 
 ## Default monospace fonts. Whenever "monospace" is used in a font
 ## setting, it's replaced with the fonts listed here.
+## Fonts = '"xos4 Terminus", Terminus, Monospace, "DejaVu Sans Mono", Monaco, "Bitstream Vera Sans Mono", "Andale Mono", "Courier New", Courier, "Liberation Mono", monospace, Fixed, Consolas, Terminal'
 ## Type: Font
-# c.fonts.monospace = '"xos4 Terminus", Terminus, Monospace, "DejaVu Sans Mono", Monaco, "Bitstream Vera Sans Mono", "Andale Mono", "Courier New", Courier, "Liberation Mono", monospace, Fixed, Consolas, Terminal'
+c.fonts.monospace = 'Terminus'
 
 ## Font used for prompts.
 ## Type: Font
@@ -1045,7 +1046,7 @@ c.keyhint.delay = 1
 ## https://peter.sh/experiments/chromium-command-line-switches/ for a
 ## list) will work.
 ## Type: List of String
-c.qt.args = ['["ppapi-widevine-path=/usr/lib64/qt5/plugins/ppapi/libwidevinecdmadapter.so"]']
+#c.qt.args = ['["ppapi-widevine-path=/usr/lib64/qt5/plugins/ppapi/libwidevinecdmadapter.so"]']
 
 ## Force a Qt platform to use. This sets the `QT_QPA_PLATFORM`
 ## environment variable and is useful to force using the XCB plugin when
@@ -1377,6 +1378,7 @@ c.url.searchengines = {
         'a': 'https://www.amazon.in/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords={}',
         'd': 'https://en.wiktionary.org/wiki/{}',
         'tw': 'https://twitter.com/{}', 
+        'db': 'https://www.imdb.com/find?q={}&ref_=nv_sr_sm',
         }
 ## Page(s) to open at the start.
 ## Type: List of FuzzyUrl, or FuzzyUrl
@@ -1412,20 +1414,21 @@ c.url.start_pages = ['http://portal.actcorp.in/web/chn/home']
 # c.zoom.text_only = False
 
 ## shortcuts for sites 
-config.bind('yo','open https://drive.google.com/drive/my-drive')
+config.bind('yo','open https://music.youtube.com/')
 config.bind('ah','open https://www.zerohedge.com/')
 config.bind('as','open http://www.speedtest.net/')
 config.bind('af','open https://www.youtube.com/channel/UC_ITtTXluRTpVeBhTNxQUMA/about')
 config.bind('ax','open https://www.bookchor.com/')
+config.bind('ac','open https://web.telegram.org/#/im')
 config.bind('pm','open https://mail.protonmail.com/login/')
 config.bind('cz','open https://www.cricbuzz.com/')
 config.bind('cr','open https://old.reddit.com/r/linux/')
-config.bind('cm','open https://medium.com/')
+config.bind('cm','open http://yojana.gov.in/Recent_archive_main.asp')
 config.bind('cb','open https://www.bitchute.com/')
 config.bind('cu','open https://unacademy.com/')
 config.bind('ca','open https://iasbaba.com/')
 config.bind('cj','open https://jordanmaxwellresearch.is/')
-config.bind('ch','open https://www.youtube.com/playlist?list=PLVOgwA_DiGzoqQsGjmamTu6f453RWpm_I') 
+config.bind('ch','open https://drive.google.com/drive/my-drive') 
 config.bind('cl','open https://www.archlinux.org/')
 config.bind('cg','open https://gitlab.com/Pradeesh112/Dotfiles')
 config.bind('cc','open https://github.com/Pradeesh112')
@@ -1438,7 +1441,7 @@ config.bind('co','open https://www.iobnet.co.in/ibanking/login.do')
 config.bind('ck','open https://www.skytorrents.lol/')
 config.bind('ct','open https://freeupscmaterials.org/prelims-2020-test-series/')
 config.bind('cp','open https://pirateproxy.gdn/')
-config.bind('cv','open https://www.insightsonindia.com/insights-ias-mains-answer-writing-new-secure-2019/')
+config.bind('cv','open https://www.insightsonindia.com/insights-ias-new-secure-initiative-for-upsc-civil-services-exam-2020/')
 config.bind('cy','open https://paytm.com/')
 config.bind('cq','open https://mypustak.com/proud-donors')
 config.bind('cn','open http://www.upsc.gov.in/')
@@ -1451,14 +1454,15 @@ config.bind('sh','open -t https://www.zerohedge.com/')
 config.bind('sf','open -t https://drive.google.com/drive/my-drive')
 config.bind('sd','open -t https://www.youtube.com/channel/UC_ITtTXluRTpVeBhTNxQUMA/about')
 config.bind('sx','open -t https://www.bookchor.com/')
+config.bind('sg','open -t https://web.telegram.org/#/im')
 config.bind('zz','open -t https://www.cricbuzz.com/')
 config.bind('zr','open -t https://old.reddit.com/r/linux/')
-config.bind('zm','open -t https://medium.com/')
+config.bind('zm','open -t http://yojana.gov.in/Recent_archive_main.asp')
 config.bind('zb','open -t https://www.bitchute.com/')
 config.bind('zu','open -t https://unacademy.com/')
 config.bind('za','open -t https://iasbaba.com/')
 config.bind('zj','open -t https://jordanmaxwellresearch.is/')
-config.bind('zh','open -t https://www.youtube.com/playlist?list=PLVOgwA_DiGzoqQsGjmamTu6f453RWpm_I') 
+config.bind('zh','open -t https://music.youtube.com/') 
 config.bind('zl','open -t https://www.archlinux.org/')
 config.bind('zg','open -t https://gitlab.com/Pradeesh112/Dotfiles')
 config.bind('zc','open -t https://github.com/Pradeesh112')
@@ -1471,7 +1475,7 @@ config.bind('zo','open -t https://www.iobnet.co.in/ibanking/login.do')
 config.bind('zk','open -t https://www.skytorrents.lol/')
 config.bind('zt','open -t https://freeupscmaterials.org/prelims-2020-test-series/')
 config.bind('zp','open -t https://pirateproxy.gdn/')
-config.bind('zv','open -t https://www.insightsonindia.com/insights-ias-mains-answer-writing-new-secure-2019/')
+config.bind('zv','open -t https://www.insightsonindia.com/insights-ias-new-secure-initiative-for-upsc-civil-services-exam-2020/')
 config.bind('zy','open -t https://paytm.com/')
 config.bind('zq','open -t https://mypustak.com/proud-donors')
 config.bind('zn','open -t http://www.upsc.gov.in/')
