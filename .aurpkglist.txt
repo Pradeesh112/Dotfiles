@@ -1,11 +1,15 @@
 betterlockscreen
 chromium-widevine
+compton
 downgrade
 dtrx
+gamin
+gconf
 i3lock-fancy-git
 light-git
+menu-calc
 ncpamixer
-ranger-git
+python-sip-pyqt5
 spotify
 thunar-extended
 wpa_actiond
