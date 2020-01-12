@@ -27,6 +27,7 @@ bindsym $mod+Shift+q kill
 # rofi 
 bindsym $mod+d exec rofi -show drun -theme arthur 
 bindsym $mod+b exec rofi-pass 
+bindsym $mod+a exec = -- -location 2 -width 40   #Menu-calc for Rofi
 
 # Autostart applications
 exec --no-startup-id nitrogen --restore; sleep 1;
@@ -48,7 +49,7 @@ bindsym $mod+F4 exec urxvt -e 'rtv'
 bindsym $mod+F5 exec thunar
 bindsym $mod+F6 exec spotify
 bindsym $mod+F7 exec transmission-gtk
-bindsym $mod+F8 exec bleachbit
+bindsym $mod+F8 exec bleachbit 
 bindsym $mod+F9 exec chromium 
 bindsym $mod+s exec gnome-screenshot -i 
 bindsym $mod+t exec urxvt -e 'tmux'
@@ -77,8 +78,6 @@ assign [class="Transmission-gtk"] $ws7
 for_window [class="^Transmission-gtk$"] focus
 assign [class="Bleachbit"] $ws8
 for_window [class="^Bleachbit$"] focus
-assign [class="Sxiv"] $ws9
-for_window [class="^Sxiv$"] focus
 assign [class="Chromium"] $ws9
 for_window [class="^Chromium"] focus
  
@@ -89,14 +88,13 @@ for_window [class="Lxappearance"] floating enable border pixel 3
 for_window [class="mpv"] border pixel 3
 for_window [class="Transmission-gtk"] floating enable border pixel 3 
 for_window [class="Bleachbit"] floating enable border pixel 3
-for_window [class="Nm-connection-editor"] floating enable
+for_window [class="Nm-connection-editor"] floating enable border pixel 3
 for_window [class="URxvt"] border pixel 3 
 for_window [class="Thunar"] border pixel 3  
 for_window [class="Nitrogen"] floating enable border pixel 3
 for_window [class="Pavucontrol"] floating enable border pixel 3
 for_window [class="qt5ct"] floating enable border pixel 3
 for_window [class="qutebrowser"] border pixel 3
-for_window [class="Sxiv"] floating enable border pixel 3
 for_window [class="Evince"] border pixel 3
 
 # reload the configuration file
@@ -179,7 +177,7 @@ set $ws5 ""
 set $ws6 ""
 set $ws7 ""
 set $ws8 ""
-set $ws9 ""
+set $ws9 ""
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -308,7 +306,6 @@ for_window [instance="aud"] move scratchpad, scratchpad show, resize set 600 450
 # Starting Scratchpads
 bindsym $mod+c exec --no-startup-id urxvt -name scratchpad -e cmus
 bindsym $mod+i exec --no-startup-id urxvt -name scratchpad -e nmtui
-bindsym $mod+a exec --no-startup-id  = -- -location 2 -width 40
 bindsym $mod+p exec --no-startup-id urxvt -name aud -e ncpamixer
 
 # Make the currently focused window a scratchpad
