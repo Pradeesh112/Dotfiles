@@ -813,7 +813,7 @@ c.downloads.remove_finished =10000
 ## setting, it's replaced with the fonts listed here.
 ## Fonts = '"xos4 Terminus", Terminus, Monospace, "DejaVu Sans Mono", Monaco, "Bitstream Vera Sans Mono", "Andale Mono", "Courier New", Courier, "Liberation Mono", monospace, Fixed, Consolas, Terminal'
 ## Type: Font
-c.fonts.monospace = 'Terminus'
+#c.fonts.monospace = 'Terminus'
 
 ## Font used for prompts.
 ## Type: Font
@@ -1046,7 +1046,7 @@ c.keyhint.delay = 1
 ## https://peter.sh/experiments/chromium-command-line-switches/ for a
 ## list) will work.
 ## Type: List of String
-#c.qt.args = ['["ppapi-widevine-path=/usr/lib64/qt5/plugins/ppapi/libwidevinecdmadapter.so"]']
+c.qt.args = ['["ppapi-widevine-path=/usr/lib64/qt5/plugins/ppapi/libwidevinecdmadapter.so"]']
 
 ## Force a Qt platform to use. This sets the `QT_QPA_PLATFORM`
 ## environment variable and is useful to force using the XCB plugin when
@@ -1483,7 +1483,7 @@ config.bind('zf','open -t https://mail.google.com/mail/u/0/#inbox')
 config.bind('zx','open -t https://www.evernote.com/Login.action')
 
 ## opens multzple sites
-config.bind('n','open https://www.youtube.com/channel/UC_ITtTXluRTpVeBhTNxQUMA/abou/;;open -t https://mail.protonmail.com/login;;open -t https://mail.google.com/mail/u/0/#inbox')
+#config.bind('n','open https://www.youtube.com/channel/UC_ITtTXluRTpVeBhTNxQUMA/abou/;;open -t https://mail.protonmail.com/login;;open -t https://mail.google.com/mail/u/0/#inbox')
 
 ## watch videos via mpv
 config.bind('<Ctrl-Shift-m>', 'hint links spawn --detach mpv --force-window yes {hint-url}')
