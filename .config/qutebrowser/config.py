@@ -575,7 +575,7 @@ c.content.host_blocking.enabled = True
 ## host per line - A zip-file of any of the above, with either only one
 ## file, or a file   named `hosts` (with any extension).
 ## Type: List of Url
-c.content.host_blocking.lists = ['/etc/hosts']
+#c.content.host_blocking.lists = ['/etc/hosts']
 
 ## List of domains that should always be loaded, despite being ad-
 ## blocked. Domains may contain * and ? wildcards and are otherwise
