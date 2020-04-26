@@ -32,7 +32,7 @@ bindsym $mod+a exec = -- -location 2 -width 40   #Menu-calc for Rofi
 # Autostart applications
 exec --no-startup-id nitrogen --restore; sleep 1;
 exec --no-startup-id redshift
-exec --no-startup-id compton  
+exec --no-startup-id compton 
 exec --no-startup-id syndaemon -i 1.5 -k -R -t
 exec --no-startup-id xautolock -time 30 -locker "betterlockscreen -l"
 exec --no-startup-id udiskie &
@@ -47,27 +47,26 @@ bindsym $mod+F2 exec pulseaudio-equalizer-gtk
 bindsym $mod+F3 exec evince
 bindsym $mod+F4 exec urxvt -e 'rtv'
 bindsym $mod+F5 exec thunar
-bindsym $mod+F6 exec spotify
-bindsym $mod+F7 exec transmission-gtk
-bindsym $mod+F8 exec bleachbit 
-bindsym $mod+F9 exec chromium 
+bindsym $mod+F6 exec transmission-gtk
+bindsym $mod+F7 exec bleachbit
+bindsym $mod+F8 exec atomic 
+#bindsym $mod+F9 exec  
 bindsym $mod+q exec qutebrowser
+bindsym $mod+n exec brave
 bindsym $mod+s exec gnome-screenshot -i 
 bindsym $mod+t exec urxvt -e 'tmux'
 bindsym $mod+Shift+n exec nitrogen
 bindsym $mod+Shift+a exec lxappearance
 bindsym $mod+Ctrl+a exec qt5ct
 bindsym Print exec --no-startup-id scrot -q 100 '%Y-%m-%d-%s.jpg' -e 'mv $f ~/Pictures/Screenshots'
-#bindsym $mod+F2 exec urxvt -e 'ranger'
-#bindsym $mod+F3 exec urxvt -e 'cmus'
 
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
 
 # Open applications on specific workspaces
-assign [class="qutebrowser"] $ws1
-for_window [class="^qutebrowser$"] focus
+#assign [class="qutebrowser"] $ws1
+#for_window [class="^qutebrowser$"] focus
 assign [class="URxvt"] $ws2
 #for_window [class="^URxvt$"] focus
 assign [class="Evince"] $ws3
@@ -76,18 +75,15 @@ assign [class="mpv"] $ws4
 for_window [class="mpv"] focus
 assign [class="Thunar"] $ws5
 for_window [class="^Thunar$"] focus
-#for_window [class="^Spotify$"] focus
-for_window [class="Spotify"] move to workspace $ws6
-assign [class="Transmission-gtk"] $ws7
+assign [class="Transmission-gtk"] $ws6
 for_window [class="^Transmission-gtk$"] focus
-assign [class="Bleachbit"] $ws8
+assign [class="Bleachbit"] $ws7
 for_window [class="^Bleachbit$"] focus
-assign [class="Chromium"] $ws9
-for_window [class="^Chromium"] focus
+assign [class="atomic"] $ws8
+for_window [class="^atomic$"] focus
  
 # Open specific applications in floating mode
 for_window [title="File Transfer*"] floating enable
-for_window [class="Spotify"] border pixel 3 
 for_window [class="Lxappearance"] floating enable border pixel 3
 for_window [class="mpv"] border pixel 3
 for_window [class="Transmission-gtk"] floating enable border pixel 3 
@@ -170,7 +166,7 @@ bindsym $mod+space focus mode_toggle
 #bindsym $mod+q focus parent
 
 # focus the child container
-bindsym $mod+n focus child
+#bindsym $mod+n focus child
 
 # Workspace names
 set $ws1 ""
@@ -178,9 +174,9 @@ set $ws2 ""
 set $ws3 ""
 set $ws4 "" 
 set $ws5 ""
-set $ws6 ""
-set $ws7 ""
-set $ws8 ""
+set $ws6 ""
+set $ws7 ""
+set $ws8 ""
 set $ws9 ""
 
 # switch to workspace
@@ -304,12 +300,11 @@ client.urgent #4A4A4A #4A4A4A #f7f7f7 #4A4A4A
 
 # Scratchpad windows
 for_window [instance="scratchpad"] move scratchpad, scratchpad show, resize set 800 550, border pixel 3, move position center
-for_window [instance="vid"] move scratchpad, resize set 800 550, border pixel 3, move position center      
 for_window [instance="aud"] move scratchpad, scratchpad show, resize set 600 450, border pixel 3, move position center 
 
 # Starting Scratchpads
 bindsym $mod+c exec --no-startup-id urxvt -name scratchpad -e cmus
-bindsym $mod+i exec --no-startup-id urxvt -name scratchpad -e nmtui
+bindsym $mod+i exec --no-startup-id urxvt -name aud -e nmtui
 bindsym $mod+p exec --no-startup-id urxvt -name aud -e ncpamixer
 
 # Make the currently focused window a scratchpad
