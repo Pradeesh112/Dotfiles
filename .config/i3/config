@@ -32,7 +32,7 @@ bindsym $mod+a exec = -- -location 2 -width 40   #Menu-calc for Rofi
 # Autostart applications
 exec --no-startup-id nitrogen --restore; sleep 1;
 exec --no-startup-id redshift
-exec --no-startup-id compton 
+exec --no-startup-id picom  
 exec --no-startup-id syndaemon -i 1.5 -k -R -t
 exec --no-startup-id xautolock -time 30 -locker "betterlockscreen -l"
 exec --no-startup-id udiskie &
@@ -300,6 +300,7 @@ client.urgent #4A4A4A #4A4A4A #f7f7f7 #4A4A4A
 
 # Scratchpad windows
 for_window [instance="scratchpad"] move scratchpad, scratchpad show, resize set 800 550, border pixel 3, move position center
+for_window [instance="vid"] move scratchpad, resize set 800 550, border pixel 3, move position center 
 for_window [instance="aud"] move scratchpad, scratchpad show, resize set 600 450, border pixel 3, move position center 
 
 # Starting Scratchpads
