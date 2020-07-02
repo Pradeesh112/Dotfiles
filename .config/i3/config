@@ -81,8 +81,6 @@ assign [class="Bleachbit"] $ws7
 for_window [class="^Bleachbit$"] focus
 assign [class="atomic"] $ws8
 for_window [class="^atomic$"] focus
-assign [class="TelegramDesktop"] $ws9
-for_window [class="TelegramDesktop"] focus
  
 # Open specific applications in floating mode
 for_window [title="File Transfer*"] floating enable
@@ -98,8 +96,6 @@ for_window [class="Pavucontrol"] floating enable border pixel 3
 for_window [class="qt5ct"] floating enable border pixel 3
 for_window [class="qutebrowser"] border pixel 3
 for_window [class="Evince"] border pixel 3
-for_window [class="TelegramDesktop"] border pixel 3
-
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -181,7 +177,7 @@ set $ws5 ""
 set $ws6 ""
 set $ws7 ""
 set $ws8 ""
-set $ws9 ""
+set $ws9 ""
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
