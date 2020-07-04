@@ -37,13 +37,9 @@ exec --no-startup-id syndaemon -i 1.5 -k -R -t
 exec --no-startup-id xautolock -time 30 -locker "betterlockscreen -l"
 exec --no-startup-id udiskie &
 exec --no-startup-id numlockx on 
-#exec --no-startup-id urxvt -name scratchpad -e cmus
-#exec --no-startup-id urxvt -e 'tmux'
-#exec --no-startup-id qutebrowser
 
 # Start Applications
 bindsym $mod+F1 exec brave; exec urxvt -e 'tmux'; exec --no-startup-id urxvt -name scratchpad -e cmus
-#bindsym $mod+F1 exec qutebrowser; exec urxvt -e 'tmux'; exec --no-startup-id urxvt -name scratchpad -e cmus
 bindsym $mod+F2 exec pulseaudio-equalizer-gtk
 bindsym $mod+F3 exec evince
 bindsym $mod+F4 exec urxvt -e 'rtv'
@@ -51,8 +47,8 @@ bindsym $mod+F5 exec thunar
 bindsym $mod+F6 exec transmission-gtk
 bindsym $mod+F7 exec bleachbit
 bindsym $mod+F8 exec atomic 
-bindsym $mod+F9 exec telegram-desktop 
-bindsym $mod+q exec qutebrowser
+bindsym $mod+F9 exec qutebrowser
+#bindsym $mod+q exec
 bindsym $mod+n exec brave
 bindsym $mod+s exec gnome-screenshot -i 
 bindsym $mod+t exec urxvt -e 'tmux'
@@ -65,8 +61,6 @@ bindsym Print exec --no-startup-id scrot -q 100 '%Y-%m-%d-%s.jpg' -e 'mv $f ~/Pi
 for_window [urgent=latest] focus
 
 # Open applications on specific workspaces
-#assign [class="qutebrowser"] $ws1
-#for_window [class="^qutebrowser$"] focus
 assign [class="URxvt"] $ws2
 #for_window [class="^URxvt$"] focus
 assign [class="Evince"] $ws3
@@ -81,9 +75,11 @@ assign [class="Bleachbit"] $ws7
 for_window [class="^Bleachbit$"] focus
 assign [class="atomic"] $ws8
 for_window [class="^atomic$"] focus
+assign [class="qutebrowser"] $ws9
+for_window [class="^qutebrowser$"] focus
  
 # Open specific applications in floating mode
-for_window [title="File Transfer*"] floating enable
+for_window [title="File Transfer*"] floating enable border pixel 3
 for_window [class="Lxappearance"] floating enable border pixel 3
 for_window [class="mpv"] border pixel 3
 for_window [class="Transmission-gtk"] floating enable border pixel 3 
@@ -92,9 +88,7 @@ for_window [class="Nm-connection-editor"] floating enable border pixel 3
 for_window [class="URxvt"] border pixel 3 
 for_window [class="Thunar"] border pixel 3  
 for_window [class="Nitrogen"] floating enable border pixel 3
-for_window [class="Pavucontrol"] floating enable border pixel 3
 for_window [class="qt5ct"] floating enable border pixel 3
-for_window [class="qutebrowser"] border pixel 3
 for_window [class="Evince"] border pixel 3
 
 # reload the configuration file
