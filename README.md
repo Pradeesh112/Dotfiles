@@ -1,3 +1,1 @@
-![Screenshot from 2020-01-12 12-14-37](https://user-images.githubusercontent.com/33805349/72215147-2f389e80-3535-11ea-84a6-97ebbc1cdf1e.png)
-![Screenshot from 2020-01-12 12-10-45](https://user-images.githubusercontent.com/33805349/72215115-c7825380-3534-11ea-882e-f28a9bad4182.png)
-
+![2021-06-27-1624779500](https://user-images.githubusercontent.com/33805349/123536639-3bc0af00-d749-11eb-876b-7ede58336fb1.jpg)
