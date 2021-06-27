@@ -1,0 +1,330 @@
+# i3 config file (v4)
+
+set $mod Mod1
+
+# Font for window titles. Will also be used by the bar unless a different font
+font pango:Noto Sans 10 
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# set default desktop layout (default is tiling)
+# workspace_layout tabbed <stacking|tabbed>
+
+# Border style
+new_window pixel 0
+new_float normal
+hide_edge_borders none
+
+# Disable focus mouse, touchpad is annoying
+focus_follows_mouse no
+
+#feh
+exec_always /usr/bin/feh --bg-fill ~/Downloads/.Wallpaper/KISS.jpg
+
+# start a terminal
+bindsym $mod+Return exec urxvt
+
+# rofi 
+bindsym $mod+d exec rofi -show drun -theme arthur
+
+# Autostart applications
+exec --no-startup-id redshift
+exec --no-startup-id picom  
+exec --no-startup-id syndaemon -i 1.5 -k -R -t
+exec --no-startup-id xautolock -time 30 -locker "betterlockscreen -l"
+exec --no-startup-id udiskie &
+exec --no-startup-id numlockx on 
+
+# Start Applications
+bindsym $mod+F1 exec brave; exec urxvt -e 'tmux'; exec --no-startup-id urxvt -name scratchpad -e cmus
+#bindsym $mod+F2 exec pulseaudio-equalizer-gtk
+bindsym $mod+F3 exec evince
+bindsym $mod+F4 exec urxvt -e 'rtv'
+bindsym $mod+F5 exec thunar
+bindsym $mod+F6 exec transmission-gtk
+bindsym $mod+F7 exec bleachbit
+#bindsym $mod+F8 exec  
+#bindsym $mod+F9 exec 
+#bindsym $mod+q exec
+bindsym $mod+b exec brave
+bindsym $mod+s exec gnome-screenshot -i 
+bindsym $mod+t exec urxvt -e 'tmux'
+#bindsym $mod+Shift+n exec 
+bindsym $mod+Shift+a exec lxappearance
+#bindsym $mod+Ctrl+a exec 
+bindsym Print exec --no-startup-id scrot -q 100 '%Y-%m-%d-%s.jpg' -e 'mv $f ~/Pictures/Screenshots'
+
+# switch to workspace with urgent window automatically
+for_window [urgent=latest] focus
+
+# Open applications on specific workspaces
+assign [class="URxvt"] $ws2
+#for_window [class="^URxvt$"] focus
+assign [class="Evince"] $ws3
+for_window [class="^Evince$"] focus
+assign [class="mpv"] $ws4
+for_window [class="mpv"] focus
+assign [class="Thunar"] $ws5
+for_window [class="^Thunar$"] focus
+assign [class="Transmission-gtk"] $ws6
+for_window [class="^Transmission-gtk$"] focus
+assign [class="BleachBit"] $ws7
+for_window [class="^BleachBit$"] focus
+ 
+# Open specific applications in floating mode
+for_window [title="File Transfer*"] floating enable border pixel 3
+for_window [class="Lxappearance"] floating enable border pixel 3
+for_window [class="mpv"] border pixel 3
+for_window [class="Transmission-gtk"] floating enable border pixel 3 
+for_window [class="BleachBit"] floating enable border pixel 3
+for_window [class="Nm-connection-editor"] floating enable border pixel 3
+for_window [class="URxvt"] border pixel 3 
+for_window [class="Thunar"] border pixel 3  
+for_window [class="Evince"] border pixel 3
+
+# Lock screen
+bindsym $mod+l exec betterlockscreen -l 
+ 
+# reload the configuration file
+bindsym $mod+Shift+c reload
+ 
+# restart i3 
+bindsym $mod+Shift+r restart
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec i3-msg exit
+ 
+# hide/unhide i3status
+bindsym $mod+m bar mode toggle
+ 
+# change borders
+bindsym $mod+u border none
+bindsym $mod+y border pixel 3
+#bindsym $mod+n border normal
+
+# change focus
+bindsym $mod+j focus down
+bindsym $mod+k focus left
+#bindsym $mod+u focus left
+#bindsym $mod+y focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+l move right
+bindsym $mod+Shift+j move up
+bindsym $mod+Shift+k move down
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod+h split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+#bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+#bindsym $mod+q focus parent
+
+# focus the child container
+#bindsym $mod+n focus child
+
+##############################
+######## workspaces ##########
+##############################
+
+# Workspace names
+set $ws1 ""
+set $ws2 ""
+set $ws3 ""
+set $ws4 ""
+set $ws5 ""
+set $ws6 ""
+set $ws7 ""
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+# switch to workspace
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2 
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+
+# Move focused container to workspace
+bindsym $mod+Ctrl+1 move container to workspace $ws1
+bindsym $mod+Ctrl+2 move container to workspace $ws2
+bindsym $mod+Ctrl+3 move container to workspace $ws3
+bindsym $mod+Ctrl+4 move container to workspace $ws4
+bindsym $mod+Ctrl+5 move container to workspace $ws5
+bindsym $mod+Ctrl+6 move container to workspace $ws6
+bindsym $mod+Ctrl+7 move container to workspace $ws7
+bindsym $mod+Ctrl+8 move container to workspace $ws8
+bindsym $mod+Ctrl+9 move container to workspace $ws9
+
+# Move to workspace with focused container
+bindsym $mod+Shift+1 move container to workspace $ws1; workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2; workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3; workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4; workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5; workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6; workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
+
+############################
+### settings for i3-gaps ###
+############################
+
+# Set inner/outer gaps
+gaps inner 05
+gaps outer 05
+
+# Enable and Disable gaps on the fly
+bindsym $mod+Shift+d gaps inner all set 0; gaps outer all set 0
+bindsym $mod+Shift+s gaps inner all set 05; gaps outer all set 05
+
+# Resize Windows on the fly
+bindsym $mod+g	      gaps outer current plus 5
+bindsym $mod+Shift+g  gaps outer current minus 5
+
+# Smart gaps (gaps used if only more than one container on the workspace)
+smart_gaps on
+
+# Smart borders (draw borders around container only if it is not the only container on this workspace) 
+# on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
+smart_borders on
+
+###########################
+### settings for resize ###
+###########################
+
+bindsym $mod+Ctrl+Right resize shrink width 1 px or 1 ppt
+bindsym $mod+Ctrl+Up    resize grow height 1 px or 1 ppt
+bindsym $mod+Ctrl+Down  resize shrink height 1 px or 1 ppt
+bindsym $mod+Ctrl+Left  resize grow width 1 px or 1 ppt
+
+###########################
+### settings for i3exit ###
+###########################
+
+set $Locker /usr/bin/betterlockscreen -l && sleep 1
+
+set $mode_system System (l) lock, (e) logout, (Shift+s) suspend, (h) hibernate, (r) reboot, (s) shutdown
+mode "$mode_system" {
+    bindsym l exec --no-startup-id $Locker, mode "default"
+    bindsym e exec --no-startup-id i3-msg exit, mode "default"
+    bindsym Shift+s exec --no-startup-id $Locker && systemctl suspend, mode "default"
+    bindsym h exec --no-startup-id $Locker && systemctl hibernate, mode "default"
+    bindsym r exec --no-startup-id systemctl reboot, mode "default"
+    bindsym s exec --no-startup-id systemctl poweroff -i, mode "default"  
+
+#back to normal: Enter or Escape
+bindsym Return mode "default"
+bindsym Escape mode "default"
+}    
+bindsym $mod+x mode "$mode_system"
+
+#############################
+### settings for i3status ###
+#############################
+
+# i3bar  
+bar {
+        tray_output none
+        status_command i3status -c ~/.config/i3/i3status.conf
+        position top
+        colors {
+                background #0B2F3A
+                separator #0B2F3A
+                statusline #00FFFF
+                focused_workspace  #0B2F3A #0B2F3A #00FFFF
+                active_workspace   #0B2F3A #0B2F3A #00FFFF
+                inactive_workspace #0B2F3A #0B2F3A #ECF6CE
+                urgent_workspace   #0B2F3A #0B2F3A #00FFFF
+    }
+}
+
+####################################
+#### settings for window borders ###
+####################################
+
+client.placeholder #242424 #242424 #242424
+client.background #242424 #242424 #242424
+client.focused #117864 #117864 #e5e5e5 #117864
+client.unfocused #4A4A4A #222222 #aaaaaa #222222
+client.focused_inactive #4A4A4A #222222 #a9a9a9 #222222
+client.urgent #4A4A4A #4A4A4A #f7f7f7 #4A4A4A
+
+###################################
+###########Scratchpads#############
+###################################
+
+# Scratchpad windows
+for_window [instance="scratchpad"] move scratchpad, scratchpad show, resize set 800 550, border pixel 3, move position center
+for_window [instance="aud"] move scratchpad, scratchpad show, resize set 600 450, border pixel 3, move position center 
+
+
+# Starting Scratchpads
+bindsym $mod+c exec --no-startup-id urxvt -name scratchpad -e cmus
+bindsym $mod+i exec --no-startup-id urxvt -name aud -e nmtui
+bindsym $mod+p exec --no-startup-id urxvt -name aud -e ncpamixer
+
+# Make the currently focused window a scratchpad
+bindsym $mod+period move scratchpad
+
+# Show the first scratchpad window
+bindsym $mod+slash scratchpad show, move position center
+
+#################################
+##########Sound Controls###########
+###################################
+
+# Use pactl to adjust volume in PulseAudio.
+set $refresh_i3status killall -SIGUSR1 i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+
+###############################################
+##########Screen Brightness Controls###########
+###############################################
+
+# Sreen brightness controls
+bindsym $mod+comma exec light -A 5 
+bindsym $mod+Shift+comma exec light -U 5 
+
